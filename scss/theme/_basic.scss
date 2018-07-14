@@ -1,0 +1,171 @@
+* {
+	box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+html {
+	font-size: 14px;
+	line-height: 1.42;
+}
+body {
+	margin: 0;
+	padding: 0;
+	color: $base-font-color;
+	font-size: $font-size-base;
+	font-family: $font-family-base;
+	font-weight: 400;
+	background-color: $gray;
+	background: url("../img/bg/gray-bg.jpg") center;
+	background-attachment: fixed;
+	display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	color: $blue;
+	font-weight: 600;
+	font-family: $link-font-family;
+		&:hover {
+			text-decoration: none;
+			outline: none;
+			color: $red;
+		}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-weight: normal;
+}
+button {
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+button:active,
+button:focus {
+	border: none;
+	outline: none;
+}
+input, input:focus {
+	background: transparent;
+	border: none;
+	outline: none;
+}
+img {
+	width: 100%;
+	// max-width: 100%;
+	height: auto;
+	   //  margin: 0 auto;
+    // opacity: 1.0;
+    // position: absolute;
+    // left: -9999px;
+    // right: -9999px;
+}
+.wrapper-page {
+	position: relative;
+	-webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+.footer-wrapper {
+	position: relative;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+
+  // grid-row-start: 2;
+  // grid-row-end: 3;
+}
+// .container {
+// 	position: relative;
+// }
+.social-drop-list__link .svg-inline--fa {
+	font-size: 1.2em;
+}
+.read-share-overlay-social__link .svg-inline--fa,
+.tabs .svg-inline--fa,
+.btn.br-box__link .svg-inline--fa {
+	color: $white;
+}
+// .search-btn .svg-inline--fa,
+// .social__item .svg-inline--fa {
+//   color: $blue;
+// }
+// .social:hover,
+// .search-btn:hover,
+// .social-drop-list,
+// .svg-inline--fa {
+// 	// background: $blue;
+// 	color: $white;
+// }
+
+// Mixin itself
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+// Usage as a mixin
+.stat {
+  @include clearfix;
+}
+// .wrapper-page.overlay {
+// 	overflow-y: hidden;
+// }
+// .overlay {
+//   // content: '';
+//   // display: none;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+// 	right: 0;
+// 	bottom: 0;
+//   height: 100%;
+//   width: 100%;
+//   background: rgba(0, 0, 0, .6);
+//   // z-index: 100;
+// 	// overflow-y: hidden;
+// }
+
+body.overlay {
+    overflow: hidden;
+}
+.overlay::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+		-webkit-transition: all 300ms ease;
+		-moz-transition: all 300ms ease;
+		-o-transition: all 300ms ease;
+		-ms-transition: all 300ms ease;
+		transition: all 300ms ease;
+}

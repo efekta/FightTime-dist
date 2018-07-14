@@ -1,0 +1,11 @@
+@mixin flex {
+	display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@mixin calc {
+	width: calc(100% - 340px);
+	width: -moz-calc(100% - 340px);
+  width: -webkit-calc(100% - 340px);
+}

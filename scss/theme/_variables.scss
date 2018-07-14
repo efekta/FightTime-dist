@@ -1,0 +1,103 @@
+$white: #fff;
+$gray: #eee;
+$light-gray: #ddd;
+$dark-gray: #777;
+$blue: #1f4773;
+$light-blue: #00aeef;
+$black: #000;
+$bg-black: rgba(0, 0, 0, .7);
+$link-bg-hover: rgba(255,255,255,0.2);
+$bg-vk: #567ca4;
+$bg-tw: #58ccff;
+$red: #f80000;
+$bg-color-sidebar: #eee;
+$content-link-color: #222;
+$base-font-color: #555;
+$bg-mob-nav: #262626;
+$bg-mob-nav-link: #ccc;
+$color-title: #378834;
+$color-title-loss: #ab372b;
+
+
+
+// https://getbootstrap.com/docs/4.0/getting-started/theming/
+$font-size-base: 1em;
+
+$font-family-base: 'robotoregular';
+
+$font-family-dop:  'roboto_condensedregular';
+$h1-font-family:   'robotoregular';
+$h2-font-family:   'robotoregular';
+$link-font-family: 'roboto_condensedregular';
+$link-color-hover:    #333;
+// $background-color: #fff;
+// $body-color: #333;
+// $h1-color: $body-color;
+// $h2-color: $body-color;
+
+// $h1-font-weight: bold;
+// $h2-font-weight: bold;
+
+
+
+$h1-margin: $grid-gutter-width 0;
+$h2-margin: $grid-gutter-width 0;
+$paragraph-margin-bottom: $grid-gutter-width;
+
+
+$h1-line-height: 2.3em;
+$h2-line-height: 2.3em;
+
+
+$xs:  0;
+$sm:  568px;
+$md:  768px;
+$lg:  960px;
+$xl:  1024px;
+$xxl: 1130px;
+
+
+$grid-columns: 12;
+
+$grid-breakpoints: (
+  xs:  $xs,
+  sm:  $sm,
+  md:  $md,
+  lg:  $lg,
+  xl:  $xl,
+  xxl: $xxl
+);
+
+$post-type: (
+  'full',
+  'top',
+  'left',
+  'left-small'
+);
+
+$container-max-widths: (
+  lg: $lg,
+  xl: $xl,
+  xxl: $xxl
+);
+
+
+
+
+// $input-btn-focus-color: none;
+
+
+// @mixin make-container() {
+//   width: 100%;
+//   padding-right: $grid-gutter-width;
+//   padding-left: $grid-gutter-width;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
+// @mixin make-container() {
+//   width: 100%;
+//   padding-right: 0;
+//   padding-left: 0;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
