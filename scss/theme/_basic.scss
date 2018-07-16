@@ -75,31 +75,17 @@ input, input:focus {
 }
 img {
 	width: 100%;
-	// max-width: 100%;
 	height: auto;
-	   //  margin: 0 auto;
-    // opacity: 1.0;
-    // position: absolute;
-    // left: -9999px;
-    // right: -9999px;
 }
 .wrapper-page {
 	position: relative;
-	-webkit-box-flex: 1;
-  -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
 .footer-wrapper {
 	position: relative;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
-
-  // grid-row-start: 2;
-  // grid-row-end: 3;
 }
-// .container {
-// 	position: relative;
-// }
+
 .social-drop-list__link .svg-inline--fa {
 	font-size: 1.2em;
 }
@@ -108,48 +94,6 @@ img {
 .btn.br-box__link .svg-inline--fa {
 	color: $white;
 }
-// .search-btn .svg-inline--fa,
-// .social__item .svg-inline--fa {
-//   color: $blue;
-// }
-// .social:hover,
-// .search-btn:hover,
-// .social-drop-list,
-// .svg-inline--fa {
-// 	// background: $blue;
-// 	color: $white;
-// }
-
-// Mixin itself
-@mixin clearfix() {
-  &::after {
-    display: block;
-    content: "";
-    clear: both;
-  }
-}
-
-// Usage as a mixin
-.stat {
-  @include clearfix;
-}
-// .wrapper-page.overlay {
-// 	overflow-y: hidden;
-// }
-// .overlay {
-//   // content: '';
-//   // display: none;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-// 	right: 0;
-// 	bottom: 0;
-//   height: 100%;
-//   width: 100%;
-//   background: rgba(0, 0, 0, .6);
-//   // z-index: 100;
-// 	// overflow-y: hidden;
-// }
 
 body.overlay {
     overflow: hidden;
@@ -163,9 +107,5 @@ body.overlay {
     top: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 2;
-		-webkit-transition: all 300ms ease;
-		-moz-transition: all 300ms ease;
-		-o-transition: all 300ms ease;
-		-ms-transition: all 300ms ease;
 		transition: all 300ms ease;
 }

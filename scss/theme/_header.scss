@@ -85,7 +85,7 @@
 .search-btn {
 	padding: 27px 15px;
 	cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   line-height: 100%;
  	transition: 0.3s;
 }
@@ -198,7 +198,6 @@ svg icon
 	position: absolute;
   right: 0px;
   display: inline-block;
-  padding: 25px 10px;
 	font-size: 20px;
 	color: $white;
 	cursor: pointer;
@@ -299,9 +298,9 @@ input[type="text"] {
 	width: 100%;
 	padding: 10px 15px;
 	cursor: pointer;
-  color: darken($light-gray, 10%); //цвет шрифта в обычном состоянии
-  font-size: 1rem; // Размер шрифта
-  font-family: $font-family-base; // Стиль шрифта
+  color: darken($light-gray, 10%);
+  font-size: 1em; 
+  font-family: $font-family-base; 
 }
 /*=================
 adaptive
@@ -357,17 +356,15 @@ adaptive
 		text-shadow: 0 1px 0 $black;
     text-transform: none;
     font-smoothing: antialiased;
-    font: 1.2rem Helvetica,Arial,Georgia,Time;
+    font-size: 1.2em;
     line-height: 1;
     font-family: Helvetica,Arial,Georgia,Time;
     font-weight: 400;
 	}
 	.head-nav-mob .menu__item:hover {
-		// transform: scale(-0.5);
 		border: none;
+    &::before {
+      display: none;
+    }
 	}
-	.head-nav-mob .menu__link:hover::before {
-		display: none;
-	}
-
 }
