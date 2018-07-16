@@ -12,12 +12,13 @@
 }
 .sidebar {
 	position: relative;
+	height: 100vh;
 }
-.sidebar-container_fixed {
-  position: fixed;
-  transform: translateX(-100%);
-  top: 75px;
-}
+// .sidebar-container_fixed {
+//   position: fixed;
+//   transform: translateX(-100%);
+//   top: 75px;
+// }
 
 .tabs {
 	display: flex;
@@ -40,12 +41,14 @@
   font-family: $font-family-dop;
   cursor: pointer;
 }
-.tab_content {
-	height: 100vh;
-}
-.tab_items {
-	margin-top: 43px;
-}
+// .tab_content {
+// 		&_fixed {
+// 			  position: fixed;
+// 			  // transform: translateX(-100%);
+// 			  top: 75px;
+// 		}
+// }
+
 .tab:hover {
 	background: $blue;
 }

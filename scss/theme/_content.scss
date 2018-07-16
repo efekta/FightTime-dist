@@ -126,8 +126,9 @@ main
 }
 .home-featured-sub-main {
 	position: relative;
+	margin-top: 1px;
 	margin-left: 1px;
-	width: 50%;
+	// width: 50%;
 	&:hover .read-share-overlay {
 		opacity: 1;
 	}

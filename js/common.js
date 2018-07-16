@@ -98,24 +98,24 @@ $('.fe-mobi-bt').click(function(){
 /* ========================
 	Nicescroll
  =========================*/
-// $(".tab_content").niceScroll({
-// cursorcolor:"#bbb",
-// cursorwidth: 0,
-// cursorborder: 0,
-// enablekeyboard: false
-// });
+$('.tab_content').niceScroll({
+	cursorcolor:"#bbb",
+	cursorwidth: 0,
+	cursorborder: 0,
+	enablekeyboard: false
+});
 
 /* ========================
   fixed tabs sidebar
 ==========================*/
-// $('.sidebar').niceScroll(function(){
-//     if($(this).scrollTop()>50){
-//         $('.tabs').addClass('tabs-fixed');
-//     }
-//     else if ($(this).scrollTop()<50){
-//         $('.tabs').removeClass('tabs-fixed');
-//     }
-// });
+$('.tab_content').niceScroll(function(){
+    if($(this).scrollTop()>50){
+        $('.tab_content').addClass('tab_content_fixed');
+    }
+    else if ($(this).scrollTop()<50){
+        $('.tab_content').removeClass('tab_content_fixed');
+    }
+});
 
 
 /* ========================
