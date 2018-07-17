@@ -2900,8 +2900,7 @@ adaptive
   width: 340px; }
 
 .sidebar {
-  position: relative;
-  height: 100vh; }
+  position: relative; }
 
 .tabs {
   display: -webkit-box;
