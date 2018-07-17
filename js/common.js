@@ -66,14 +66,14 @@ else{
   fixed sidebar
 ==========================*/
 
-// $(window).scroll(function() {
-// 	if($(this).scrollTop() >= 460) {
-// 		$('.sidebar-container').addClass('sidebar-container_fixed');
-// 	}
-// 	else{
-// 		$('.sidebar-container').removeClass('sidebar-container_fixed');
-// 	}
-// });
+$(window).scroll(function() {
+	if($(this).scrollTop() >= 460) {
+		$('.sidebar-container').addClass('sidebar-container_fixed');
+	}
+	else{
+		$('.sidebar-container').removeClass('sidebar-container_fixed');
+	}
+});
 
 /* ==========================================
   Функции открытия и закрытия сайдбара

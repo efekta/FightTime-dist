@@ -10,6 +10,11 @@
 .sidebar-container {
 	background: $bg-color-sidebar;
 	width: 340px;
+			&_fixed {
+			position: fixed;
+  		transform: translateX(-100%);
+  		top: 75px;
+		}
 }
 .sidebar {
 	position: relative;
