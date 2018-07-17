@@ -144,6 +144,7 @@ a.featured-item {
 }
 .featured-sub-item-pic {
   height: 220px;
+  overflow: hidden;
   position: relative;
     img {
       height: 100%;
@@ -158,13 +159,17 @@ a.featured-item {
 adaptive
 ==================*/
 @media screen and (max-width:1130px) and (min-width: 320px) {
-  .featured-sub-main-wrapp {
-    flex-wrap: wrap;
-  }
   .featured {
     .container {
       margin: 0;
       max-width: 100%;
     }
+  }
+}
+
+@media screen and (max-width:960px) and (min-width: 320px) {
+  .featured-item-pic {
+      height: auto;
+      overflow: hidden;
   }
 }

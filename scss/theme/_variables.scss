@@ -29,14 +29,15 @@ $font-family-dop:  'roboto_condensedregular';
 $h1-font-family:   'robotoregular';
 $h2-font-family:   'robotoregular';
 $link-font-family: 'roboto_condensedregular';
+$base-font-family: 'robotoregular';
 $link-color-hover:    #333;
 // $background-color: #fff;
 // $body-color: #333;
 // $h1-color: $body-color;
 // $h2-color: $body-color;
 
-// $h1-font-weight: bold;
-// $h2-font-weight: bold;
+$h1-font-weight: bold;
+$h2-font-weight: bold;
 
 
 
@@ -48,13 +49,14 @@ $paragraph-margin-bottom: $grid-gutter-width;
 $h1-line-height: 2.3em;
 $h2-line-height: 2.3em;
 
+$input-btn-focus-color: none;
 
 $xs:  0;
 $sm:  568px;
-$md:  768px;
-$lg:  960px;
-$xl:  1024px;
-$xxl: 1130px;
+$md:  960px;
+$lg:  1024px;
+$xl:  1130px;
+$xxl: 1290px;
 
 
 $grid-columns: 12;
@@ -84,20 +86,3 @@ $container-max-widths: (
 
 
 
-// $input-btn-focus-color: none;
-
-
-// @mixin make-container() {
-//   width: 100%;
-//   padding-right: $grid-gutter-width;
-//   padding-left: $grid-gutter-width;
-//   margin-right: auto;
-//   margin-left: auto;
-// }
-// @mixin make-container() {
-//   width: 100%;
-//   padding-right: 0;
-//   padding-left: 0;
-//   margin-right: auto;
-//   margin-left: auto;
-// }
