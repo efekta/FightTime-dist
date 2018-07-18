@@ -1,30 +1,25 @@
 // sidebar
 .sidebar-wrap {
-	// height: 100vh;
 	position: absolute;
 	top: 0;
 	right: 0;
 	border-left: 1px solid lighten($dark-gray, 35%);
 	z-index: 2;
+				&_fixed {
+			position: fixed;
+  		// transform: translateX(-100%);
+  		top: 52px;
+		}
 }
 .sidebar-container {
 	background: $bg-color-sidebar;
 	width: 340px;
-			&_fixed {
-			position: fixed;
-  		transform: translateX(-100%);
-  		top: 75px;
-		}
+	// height: 100vh;
+  // overflow-y: auto;
 }
 .sidebar {
 	position: relative;
-	// height: 100vh;
 }
-// .sidebar-container_fixed {
-//   position: fixed;
-//   transform: translateX(-100%);
-//   top: 75px;
-// }
 
 .tabs {
 	display: flex;
@@ -46,21 +41,18 @@
 	transition: all 300ms ease;
   font-family: $font-family-dop;
   cursor: pointer;
+  	&:hover {
+  		background: $blue;
+  	}
+  	&-active {
+  		background: $blue;
+  	}
+  	&_content {
+  		height: 100vh;
+  		overflow: auto;
+  	}
 }
-// .tab_content {
-// 		&_fixed {
-// 			  position: fixed;
-// 			  // transform: translateX(-100%);
-// 			  top: 75px;
-// 		}
-// }
 
-.tab:hover {
-	background: $blue;
-}
-.tab-active {
-	background: $blue;
-}
 .sidebar-item {
 	display: flex;
 	margin-top: -1px;
@@ -69,11 +61,11 @@
 	border-bottom: 1px solid lighten($dark-gray, 35%);
 	transition: all 300ms ease;
 	align-items: center;
+		&:hover {
+			background: $white;
+		}
 }
 
-.sidebar-item:hover {
-	background: $white;
-}
 .tab-num {
 	text-align: center;
 	min-width: 60px;
@@ -83,14 +75,15 @@
 	border-bottom-right-radius: 4px;
 	font-size: 0.9rem;
 	margin-right: 20px;
+		span {
+			display: block;
+			line-height: 100%;
+			font-weight: 700;
+			text-transform: uppercase;
+			padding: 5px;
+		}
 }
-.tab-num span {
-	display: block;
-	line-height: 100%;
-	font-weight: 700;
-	text-transform: uppercase;
-	padding: 5px;
-}
+
 .tab-num_month {
   color: $white;
   background-color: $blue;
@@ -119,19 +112,21 @@
 	width: 20%;
 	margin-right: 20px;
 	font-size: 1.5rem;
+		img {
+			width: 50px;
+		}
 }
-.item-box-pic img {
-	width: 50px;
-}
+
 .item-box-title {
 	font-size: 1.2rem;
+		.name_rus {
+			font-weight: 700;
+		}
+	.name_eng {
+		  font-weight: 400;
+		}
 }
-.item-box-title .name_rus {
-	font-weight: 700;
-}
-.item-box-title .name_eng {
-  font-weight: 400;
-}
+
 .fe-search-box {
   font-size: 1rem;
   font-weight: 700;
@@ -142,17 +137,22 @@
 .fe-search {
 	display: flex;
   justify-content: space-between;
+  	input {
+  		width: 80%;
+			padding: 10px 10px 9px;
+		  box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+		  border: none;
+		  border-bottom: 1px solid lighten($dark-gray, 20%);
+		  font-size: 1rem;
+		  font-weight: 700;
+		  color: $base-font-color;
+  	}
+  	.btn {
+  		color: $white;
+  		padding: 10px;
+  	}
 }
-.fe-search input {
-	width: 80%;
-	padding: 10px 10px 9px;
-  box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  border: none;
-  border-bottom: 1px solid lighten($dark-gray, 20%);
-  font-size: 1rem;
-  font-weight: 700;
-  color: $base-font-color;
-}
+
 .fe-search ::-webkit-input-placeholder {color:lighten($base-font-color, 10%); font-size: 1rem; font-weight: 700; text-transform: none;}
 .fe-search ::-moz-placeholder          {color:lighten($base-font-color, 10%); font-size: 1rem; font-weight: 700; text-transform: none;}/* Firefox 19+ */
 .fe-search :-moz-placeholder           {color:lighten($base-font-color, 10%); font-size: 1rem; font-weight: 700; text-transform: none;}/* Firefox 18- */
@@ -164,10 +164,6 @@
 	align-items: center;
 	justify-content: center;
 	background: $blue;
-}
-.fe-search .btn {
-	color: $white;
-  padding: 10px;
 }
 
 .fe-mobi-bt {
@@ -194,7 +190,7 @@
 /*=================
 adaptive sidebar
 ==================*/
-@media screen and (max-width: 960px) and (min-width: 320px) {
+@media screen and (max-width: 1024px) and (min-width: 320px) { 
 	.sidebar-wrap {
 	    position: fixed;
 	    top: 52px;
@@ -218,4 +214,29 @@ adaptive sidebar
 	.sidebar-wrap-show .fe-mobi-bt {
     right: 310px;
 	}
+}
+@media screen and (max-width: 960px) and (min-width: 320px) {
+	// .sidebar-wrap {
+	//     position: fixed;
+	//     top: 52px;
+	//     right: -340px;
+	//     transition: all 300ms ease;
+ //    	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+ //    	border-left: 10px solid $blue;
+	// }
+	// .sidebar-wrap-show {
+	// 	right: 0;
+	// }
+
+	// .sidebar-container_fixed {
+	// 	position: relative;
+	// 	transform: none;
+	// 	top: 0;
+	// }
+	// .fe-mobi-bt {
+	// 	display: block;
+	// }
+	// .sidebar-wrap-show .fe-mobi-bt {
+ //    right: 310px;
+	// }
 }

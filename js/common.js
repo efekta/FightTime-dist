@@ -68,10 +68,10 @@ else{
 
 $(window).scroll(function() {
 	if($(this).scrollTop() >= 460) {
-		$('.sidebar-container').addClass('sidebar-container_fixed');
+		$('.sidebar-wrap').addClass('sidebar-wrap_fixed');
 	}
 	else{
-		$('.sidebar-container').removeClass('sidebar-container_fixed');
+		$('.sidebar-wrap').removeClass('sidebar-wrap_fixed');
 	}
 });
 
@@ -105,25 +105,14 @@ $('.tab_content').niceScroll({
 	enablekeyboard: false
 });
 
-/* ========================
-  fixed tabs sidebar
-==========================*/
-$('.tab_content').niceScroll(function(){
-    if($(this).scrollTop()>50){
-        $('.tab_content').addClass('tab_content_fixed');
-    }
-    else if ($(this).scrollTop()<50){
-        $('.tab_content').removeClass('tab_content_fixed');
-    }
-});
 
 
 /* ========================
 infinite
 ==========================*/
-$('.story').infiniteScroll({
-  path: '.pagination__next',
-  append: '.home-widget-featured-sub-main-wrapp',
-  status: '.scroller-status',
-  hideNav: '.pagination',
-});
+// $('.story').infiniteScroll({
+//   path: '.pagination__next',
+//   append: '.home-widget-featured-sub-main-wrapp',
+//   status: '.scroller-status',
+//   hideNav: '.pagination',
+// });

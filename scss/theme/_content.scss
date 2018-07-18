@@ -68,6 +68,7 @@ main
 	display: flex;
 	flex-wrap: wrap;
 	padding: 20px 2.93255131965%;
+	// padding-left: 13px;
 }
 .home-content-item {
 	margin-bottom: 30px;
@@ -151,6 +152,8 @@ main
 		  margin: auto;
 		  position: absolute;
 		  top: -9999px;
+		  left: -9999px;
+		  right: -9999px;
 		  bottom: -9999px;
 	 }
 }
@@ -603,9 +606,9 @@ footer
 
 .foot-widget-pic {
 	margin-bottom: 15px;
-		// img {
-		// 	width: auto;
-		// }
+		img {
+			width: auto;
+		}
 }
 .foot-widget-content {
 	margin-bottom: 15px;
@@ -791,28 +794,39 @@ adaptive
 		margin: 20px 0;
 	}
 }
-// @media screen and (max-width: 1024px) and (min-width: 320px) { 
+@media screen and (max-width: 1024px) and (min-width: 320px) { 
 // 	.featured-sub-item-pic img {
 // 		width: 100%;
 // 		height: auto;
 // 	}
-// }
-@media screen and (max-width: 960px) and (min-width: 320px) {
 	.news-post, .social-news-post, .post-latest-header, .footer-wrapper,
 	.home-content-list, .home-widgets, .story {
     width: 100%;
 	}
+	.home-content-list {
+		padding-left: 13px;
+	}
+}
+@media screen and (max-width: 960px) and (min-width: 320px) {
+	// .news-post, .social-news-post, .post-latest-header, .footer-wrapper,
+	// .home-content-list, .home-widgets, .story {
+ //    width: 100%;
+	// }
+	// .home-content-list {
+	// 	padding-left: 13px;
+	// }
 }
 @media screen and (max-width: 768px) and (min-width: 320px) {
-	.home-featured-sub-main {
-		margin-left: 0;
-	}
+	// .home-featured-sub-main {
+	// 	margin-left: 0;
+	// }
 	.news-post {
 		padding: 15px;
 	}
-	.story-widget-grid img {
-		width: 100%;
-	}
+	// .story-widget-grid img {
+	// 	width: 100%;
+	// 	height: 100%;
+	// }
 	.page-fighter_info {
 		display: block;
 	}
@@ -834,5 +848,19 @@ adaptive
 		text-align: center;
 		margin-bottom: 5px;
 	}
+	// .home-widget-grid {
+	// 	position: relative;
+	// 	height: 120px;
+	// 	img {
+	// 		height: 100%;
+	// 	  width: 100%;
+	// 	  margin: auto;
+	// 	  position: absolute;
+	// 	  top: -9999px;
+	// 	  left: -9999px;
+	// 	  right: -9999px;
+	// 	  bottom: -9999px;
+	// 	}
+	// }
 }
 

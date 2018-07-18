@@ -1,4 +1,98 @@
 @charset "UTF-8";
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit; }
+
+h1, .h1 {
+  font-size: 2.5rem; }
+
+h2, .h2 {
+  font-size: 2rem; }
+
+h3, .h3 {
+  font-size: 1.75rem; }
+
+h4, .h4 {
+  font-size: 1.5rem; }
+
+h5, .h5 {
+  font-size: 1.25rem; }
+
+h6, .h6 {
+  font-size: 1rem; }
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300; }
+
+.display-1 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.2; }
+
+.display-2 {
+  font-size: 5.5rem;
+  font-weight: 300;
+  line-height: 1.2; }
+
+.display-3 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2; }
+
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2; }
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+
+small,
+.small {
+  font-size: 80%;
+  font-weight: 400; }
+
+mark,
+.mark {
+  padding: 0.2em;
+  background-color: #fcf8e3; }
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none; }
+
+.list-inline {
+  padding-left: 0;
+  list-style: none; }
+
+.list-inline-item {
+  display: inline-block; }
+  .list-inline-item:not(:last-child) {
+    margin-right: 0.5rem; }
+
+.initialism {
+  font-size: 90%;
+  text-transform: uppercase; }
+
+.blockquote {
+  margin-bottom: 1rem;
+  font-size: 1.25rem; }
+
+.blockquote-footer {
+  display: block;
+  font-size: 80%;
+  color: #6c757d; }
+  .blockquote-footer::before {
+    content: "\2014 \00A0"; }
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -2222,6 +2316,8 @@ main
     margin: auto;
     position: absolute;
     top: -9999px;
+    left: -9999px;
+    right: -9999px;
     bottom: -9999px; }
 
 .home-widge-box-lid {
@@ -2279,6 +2375,7 @@ story section
   position: relative;
   height: 240px; }
   .story-widget-grid img {
+    height: 100%;
     min-width: 300px;
     position: absolute;
     left: -9999px;
@@ -2675,6 +2772,8 @@ footer
 
 .foot-widget-pic {
   margin-bottom: 15px; }
+  .foot-widget-pic img {
+    width: auto; }
 
 .foot-widget-content {
   margin-bottom: 15px; }
@@ -2863,18 +2962,16 @@ adaptive
   .foot-widget-pic {
     margin: 20px 0; } }
 
-@media screen and (max-width: 960px) and (min-width: 320px) {
+@media screen and (max-width: 1024px) and (min-width: 320px) {
   .news-post, .social-news-post, .post-latest-header, .footer-wrapper,
   .home-content-list, .home-widgets, .story {
-    width: 100%; } }
+    width: 100%; }
+  .home-content-list {
+    padding-left: 13px; } }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
-  .home-featured-sub-main {
-    margin-left: 0; }
   .news-post {
     padding: 15px; }
-  .story-widget-grid img {
-    width: 100%; }
   .page-fighter_info {
     display: block; }
   .fighter-main-img {
@@ -2897,16 +2994,13 @@ adaptive
   right: 0;
   border-left: 1px solid #d0d0d0;
   z-index: 2; }
+  .sidebar-wrap_fixed {
+    position: fixed;
+    top: 52px; }
 
 .sidebar-container {
   background: #eee;
   width: 340px; }
-  .sidebar-container_fixed {
-    position: fixed;
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
-    top: 75px; }
 
 .sidebar {
   position: relative; }
@@ -2939,12 +3033,13 @@ adaptive
   transition: all 300ms ease;
   font-family: "roboto_condensedregular";
   cursor: pointer; }
-
-.tab:hover {
-  background: #1f4773; }
-
-.tab-active {
-  background: #1f4773; }
+  .tab:hover {
+    background: #1f4773; }
+  .tab-active {
+    background: #1f4773; }
+  .tab_content {
+    height: 100vh;
+    overflow: auto; }
 
 .sidebar-item {
   display: -webkit-box;
@@ -2960,9 +3055,8 @@ adaptive
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-
-.sidebar-item:hover {
-  background: #fff; }
+  .sidebar-item:hover {
+    background: #fff; }
 
 .tab-num {
   text-align: center;
@@ -2973,13 +3067,12 @@ adaptive
   border-bottom-right-radius: 4px;
   font-size: 0.9rem;
   margin-right: 20px; }
-
-.tab-num span {
-  display: block;
-  line-height: 100%;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 5px; }
+  .tab-num span {
+    display: block;
+    line-height: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px; }
 
 .tab-num_month {
   color: #fff;
@@ -3009,18 +3102,15 @@ adaptive
   width: 20%;
   margin-right: 20px;
   font-size: 1.5rem; }
-
-.item-box-pic img {
-  width: 50px; }
+  .item-box-pic img {
+    width: 50px; }
 
 .item-box-title {
   font-size: 1.2rem; }
-
-.item-box-title .name_rus {
-  font-weight: 700; }
-
-.item-box-title .name_eng {
-  font-weight: 400; }
+  .item-box-title .name_rus {
+    font-weight: 700; }
+  .item-box-title .name_eng {
+    font-weight: 400; }
 
 .fe-search-box {
   font-size: 1rem;
@@ -3036,17 +3126,19 @@ adaptive
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-
-.fe-search input {
-  width: 80%;
-  padding: 10px 10px 9px;
-  -webkit-box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  border: none;
-  border-bottom: 1px solid #aaaaaa;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #555; }
+  .fe-search input {
+    width: 80%;
+    padding: 10px 10px 9px;
+    -webkit-box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    border: none;
+    border-bottom: 1px solid #aaaaaa;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #555; }
+  .fe-search .btn {
+    color: #fff;
+    padding: 10px; }
 
 .fe-search ::-webkit-input-placeholder {
   color: #6f6f6f;
@@ -3087,10 +3179,6 @@ adaptive
   justify-content: center;
   background: #1f4773; }
 
-.fe-search .btn {
-  color: #fff;
-  padding: 10px; }
-
 .fe-mobi-bt {
   display: none;
   color: #fff;
@@ -3117,7 +3205,7 @@ adaptive
 /*=================
 adaptive sidebar
 ==================*/
-@media screen and (max-width: 960px) and (min-width: 320px) {
+@media screen and (max-width: 1024px) and (min-width: 320px) {
   .sidebar-wrap {
     position: fixed;
     top: 52px;
