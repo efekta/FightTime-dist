@@ -5458,19 +5458,37 @@ table-box
 .table-body {
   border-left: 1px solid #ccc; }
   .table-body_box {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     min-height: 96px;
     padding: 10px;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc; }
+  .table-body_link {
+    font-size: 1.2em;
+    font-weight: 600;
+    display: block; }
+    .table-body_link span {
+      font-weight: normal; }
 
 #fb-fighter .table-body .result {
   color: #fff;
   background-color: #378834;
   border-bottom: 2px solid #2c6e2a;
   padding: 4px 10px;
-  font-size: 90%;
+  font-size: 1em;
   font-weight: bold;
   text-transform: uppercase; }
+
+#fb-fighter .table-body .loss {
+  background-color: #ab372b;
+  border-bottom: 2px solid #912f24; }
 
 /*=================
 adaptive
