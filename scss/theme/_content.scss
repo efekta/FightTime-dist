@@ -232,7 +232,7 @@ story section
 news
 ==================*/
 .news-post {
-	padding: 30px;
+	padding: 20px 2.93255131965%;
 	@include calc;
 }
 .news-post-cat-date {
@@ -622,10 +622,10 @@ footer
 /*=================
 FIGHTER
 ==================*/
-.page-fighter_info {
-	display: flex;
-	flex-wrap: wrap;
-}
+// .page-fighter_info {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// }
 .fighter-title {
 	margin-top: 0;
 		h1 {
@@ -636,6 +636,10 @@ FIGHTER
 
 .fighter-main-img {
 	margin-right: 22px;
+	// text-align: center;
+		img {
+			width: auto;
+		}
 }
 .fighter-info {
 	display: flex;
@@ -678,15 +682,15 @@ FIGHTER
 stat
 ==================*/
 .stat {
-	display: flex;
-	flex-wrap: wrap;
+	// display: flex;
+	// flex-wrap: wrap;
 	margin-bottom: 20px;
 }
 .stat-box {
 	display: flex;
 }
 .stat__wins {
-	width: 50%;
+	// width: 50%;
 	color: $color-title;
 }
 .title {
@@ -740,7 +744,7 @@ stat
 	color: $color-title-loss;
 }
 .stat__loss {
-	width: 50%;
+	// width: 50%;
 	color: $color-title-loss;
 }
 .stat-sub-box {
@@ -766,10 +770,15 @@ stat
 }
 
 .stat-sub-box_block {
-	margin-left: -15px;
+	margin-left: -13px;
 }
-
-
+/*=================
+table-box
+==================*/
+.table-box {
+	@include calc;
+	padding: 20px 2.93255131965%;
+}
 /*=================
 adaptive
 ==================*/
@@ -780,9 +789,9 @@ adaptive
     margin: 0;
     max-width: 100%;
 	}
-	.main-page-fighter {
-		margin-top: 52px;
-	}
+	// .main-page-fighter {
+	// 	margin-top: 52px;
+	// }
 
 	.story {
 		margin-top: 52px;
@@ -806,6 +815,10 @@ adaptive
 	.home-content-list {
 		padding-left: 13px;
 	}
+	.fighter-info, .bio, .stat {
+  	margin: 0 20px;
+  	margin-bottom: 10px;
+	}
 }
 @media screen and (max-width: 960px) and (min-width: 320px) {
 	// .news-post, .social-news-post, .post-latest-header, .footer-wrapper,
@@ -815,6 +828,13 @@ adaptive
 	// .home-content-list {
 	// 	padding-left: 13px;
 	// }
+	.fighter-main-img {
+		text-align: center;
+		margin-right: 0;
+			img {
+				width: auto;
+			}
+	}
 }
 @media screen and (max-width: 768px) and (min-width: 320px) {
 	// .home-featured-sub-main {

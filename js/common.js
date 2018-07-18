@@ -68,10 +68,10 @@ else{
 
 $(window).scroll(function() {
 	if($(this).scrollTop() >= 460) {
-		$('.sidebar-wrap').addClass('sidebar-wrap_fixed');
+		$('.sidebar-container').addClass('sidebar-container_fixed');
 	}
 	else{
-		$('.sidebar-wrap').removeClass('sidebar-wrap_fixed');
+		$('.sidebar-container').removeClass('sidebar-container_fixed');
 	}
 });
 
