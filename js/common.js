@@ -112,7 +112,7 @@ infinite
 ==========================*/
 // $('.story').infiniteScroll({
 //   path: '.pagination__next',
-//   append: '.home-widget-featured-sub-main-wrapp',
+//   append: '.home-featured-sub-main',
 //   status: '.scroller-status',
 //   hideNav: '.pagination',
 // });
