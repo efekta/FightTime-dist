@@ -779,6 +779,38 @@ table-box
 	@include calc;
 	padding: 20px 2.93255131965%;
 }
+
+.table-head {
+	background-color: $bg-mob-nav-link;
+		&_col {
+			color: $white;
+			font-size: 1.2em;
+			font-weight: 700;
+			font-family: $font-family-dop;
+			background-color: $blue;
+			padding: 10px 5px;
+			margin-left: 1px;
+			text-align: center;
+		}
+}
+.table-body {
+	border-left: 1px solid #ccc;
+	// border-right: 1px solid #ccc;
+		&_box {
+			padding: 10px;
+			border-right: 1px solid #ccc;
+		}
+}
+
+#fb-fighter .table-body .result {
+	color: $white;
+  background-color: #378834;
+  border-bottom: 2px solid #2c6e2a;
+  padding: 4px 10px;
+  font-size: 90%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 /*=================
 adaptive
 ==================*/
@@ -809,7 +841,7 @@ adaptive
 // 		height: auto;
 // 	}
 	.news-post, .social-news-post, .post-latest-header, .footer-wrapper,
-	.home-content-list, .home-widgets, .story {
+	.home-content-list, .home-widgets, .story, .table-box {
     width: 100%;
 	}
 	.home-content-list {
@@ -819,6 +851,9 @@ adaptive
   	margin: 0 20px;
   	margin-bottom: 10px;
 	}
+	// .table-box {
+	// 	margin: 0 20px;
+	// }
 }
 @media screen and (max-width: 960px) and (min-width: 320px) {
 	// .news-post, .social-news-post, .post-latest-header, .footer-wrapper,

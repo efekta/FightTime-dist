@@ -67,7 +67,7 @@ else{
 ==========================*/
 
 $(window).scroll(function() {
-	if($(this).scrollTop() >= 460) {
+	if($(this).scrollTop() >= 260) {
 		$('.sidebar-container').addClass('sidebar-container_fixed');
 	}
 	else{
