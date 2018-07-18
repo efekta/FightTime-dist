@@ -761,7 +761,7 @@ stat
 	background: $color-title-loss;
 }
 .fighter-subtitle {
-	margin: 10px 0;
+	margin: 20px 0;
 		h2 {
 			font-size: 1.3em;
   		font-weight: 700;
@@ -891,9 +891,9 @@ adaptive
 			}
 	}
 //table
-	// .table-head {
-	// 		display: none;
-	// }
+	.table-head {
+			display: none;
+	}
 	// .table-body_box {
 	// 		justify-content: center;
 	// }

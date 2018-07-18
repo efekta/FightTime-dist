@@ -5425,7 +5425,7 @@ stat
   background: #ab372b; }
 
 .fighter-subtitle {
-  margin: 10px 0; }
+  margin: 20px 0; }
   .fighter-subtitle h2 {
     font-size: 1.3em;
     font-weight: 700;
@@ -5520,7 +5520,9 @@ adaptive
     text-align: center;
     margin-right: 0; }
     .fighter-main-img img {
-      width: auto; } }
+      width: auto; }
+  .table-head {
+    display: none; } }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
   .news-post {
