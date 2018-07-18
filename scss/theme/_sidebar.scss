@@ -193,13 +193,13 @@
 adaptive sidebar
 ==================*/
 @media screen and (max-width: 1130px) and (min-width: 320px) { 
-.sidebar-container {
-  	&_fixed {
-	  	position: relative;
-			transform: none;
-			top: 0;
-		}
-	}
+// .sidebar-container {
+//   	&_fixed {
+// 	  	position: relative;
+// 			transform: none;
+// 			top: 0;
+// 		}
+// 	}
 }
 @media screen and (max-width: 1024px) and (min-width: 320px) { 
 	.sidebar-wrap {
