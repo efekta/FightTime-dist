@@ -801,7 +801,8 @@ table-box
 .table-body {
 	border-left: 1px solid $bg-mob-nav-link;
 		&_box {
-			padding: 10px !important;
+			// padding: 10px !important;
+			height: 100%;
 			border-right: 1px solid $bg-mob-nav-link;
 			border-bottom: 1px solid $bg-mob-nav-link;
 		}
