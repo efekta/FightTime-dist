@@ -5290,7 +5290,7 @@ FIGHTER
 .fighter-title {
   margin-top: 0; }
   .fighter-title h1 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 700; }
 
 .fighter-main-img {
@@ -5502,7 +5502,7 @@ table-box
 .result-wrap {
   width: 49%; }
 
-#fb-fighter .table-body .result {
+.table-body .result {
   color: #fff;
   background-color: #378834;
   border-bottom: 2px solid #2c6e2a;
@@ -5511,7 +5511,7 @@ table-box
   font-weight: bold;
   text-transform: uppercase; }
 
-#fb-fighter .table-body .loss {
+.table-body .loss {
   background-color: #ab372b;
   border-bottom: 2px solid #912f24; }
 
@@ -5520,6 +5520,63 @@ table-box
 
 .mob-order {
   display: none; }
+
+/*=================
+event
+==================*/
+.events_date {
+  font-weight: 700;
+  font-size: 1.2em; }
+
+.events_place {
+  color: #777;
+  font-weight: normal;
+  font-size: 1.2em;
+  margin-bottom: 20px; }
+  .events_place span {
+    margin-left: 5px; }
+  .events_place img {
+    max-width: 100%;
+    width: 16px;
+    height: 11px; }
+
+.events-table-head {
+  border: none; }
+
+.events-table-head-col {
+  padding: 10px !important;
+  border-right: none; }
+
+.events-table-body {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px !important; }
+
+.fightinfo-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px; }
+
+.fightinfo-pic img {
+  width: auto; }
+
+.fightinfo-item_content {
+  margin-right: 10px; }
+
+.fightinfo-vs {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: #898989;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 /*=================
 adaptive

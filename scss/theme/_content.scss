@@ -629,7 +629,7 @@ FIGHTER
 .fighter-title {
 	margin-top: 0;
 		h1 {
-			font-size: 1.8em;
+			font-size: 1.6em;
 			font-weight: 700;
 		}
 }
@@ -833,7 +833,7 @@ table-box
 .result-wrap {
 	width: 49%;
 }
-#fb-fighter .table-body .result {
+.table-body .result {
 	color: $white;
   background-color: #378834;
   border-bottom: 2px solid #2c6e2a;
@@ -842,7 +842,7 @@ table-box
   font-weight: bold;
   text-transform: uppercase;
 }
-#fb-fighter .table-body .loss {
+.table-body .loss {
   background-color: #ab372b;
   border-bottom: 2px solid #912f24;
 }
@@ -852,6 +852,70 @@ table-box
 .mob-order {
 	display: none;
 }
+/*=================
+event
+==================*/
+.events {
+	&_date {
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+	&_place {
+		color: $dark-gray;
+		font-weight: normal;
+		font-size: 1.2em;
+		margin-bottom: 20px;
+			span {
+				margin-left: 5px;
+			}
+			img {
+				max-width: 100%;
+				width: 16px;
+				height: 11px;
+			}
+		}
+		&-table-head {
+			border: none;
+		}
+		&-table-head-col {
+			// text-align: left;
+			padding: 10px !important;
+			border-right: none;
+		}
+		&-table-body {
+			border-right: 1px solid $bg-mob-nav-link;
+			border-bottom: 1px solid $bg-mob-nav-link;
+			padding: 10px !important;
+		}
+}
+.fightinfo {
+	// display: flex;
+	// justify-content: space-between;
+		&-item {
+				display: flex;
+				margin-bottom: 10px;
+		// 	width: 50%;
+		}
+		// &-pic {
+		// 	display: inline-block;
+		// }
+		&-pic img {
+			width: auto;
+		}
+		&-item_content {
+			margin-right: 10px;
+			// display: inline-block;
+		}
+		&-vs {
+			text-transform: uppercase;
+			font-size: 1.2em;
+			color: lighten($dark-gray, 7%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+}
+
 /*=================
 adaptive
 ==================*/
