@@ -9,8 +9,6 @@
 .sidebar-container {
 	background: $bg-color-sidebar;
 	width: 340px;
-	// height: 100vh;
-  // overflow-y: auto;
   	&_fixed {
 			position: fixed;
   		transform: translateX(-100%);
@@ -35,7 +33,7 @@
 	padding: 11px 10px;
 	background: darken($dark-gray, 5%);
 	color: lighten($dark-gray, 40%);
-	font-size: 1rem;
+	font-size: 1em;
 	text-transform: uppercase;
 	font-weight: 700;
 	text-align: center;
@@ -49,7 +47,6 @@
   		background: $blue;
   	}
   	&_content {
-  		// position: relative;
   		height: 100vh;
   		overflow: auto;
   	}
@@ -75,7 +72,7 @@
 	border: 1px solid lighten($dark-gray, 35%);
 	border-bottom-left-radius: 4px;
 	border-bottom-right-radius: 4px;
-	font-size: 0.9rem;
+	font-size: 0.9em;
 	margin-right: 20px;
 		span {
 			display: block;
@@ -96,31 +93,29 @@
 .tab-num_day {
 	color: $blue;
 	background: $white;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 }
 
 .tab-num_year {
 	color: $white;
 	background: lighten($dark-gray, 35%);
 }
-.tab-content_box-desc {
-	display: flex;
-}
+
 .tab-content_desc {
 	line-height: 130%;
-	font-size: 1.2rem;
+	font-size: 1.2em;
 }
 .item-box-pic {
 	width: 20%;
 	margin-right: 20px;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 		img {
 			width: 50px;
 		}
 }
 
 .item-box-title {
-	font-size: 1.2rem;
+	font-size: 1.2em;
 	.name_rus {
 			font-weight: 700;
 		}
@@ -130,7 +125,7 @@
 }
 
 .fe-search-box {
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 700;
   color: $base-font-color;
   background: $white;
@@ -145,7 +140,7 @@
 		  box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
 		  border: none;
 		  border-bottom: 1px solid lighten($dark-gray, 20%);
-		  font-size: 1rem;
+		  font-size: 1em;
 		  font-weight: 700;
 		  color: $base-font-color;
   	}
@@ -193,6 +188,33 @@
 adaptive sidebar
 ==================*/
 @media screen and (max-width: 1130px) and (min-width: 320px) { 
+// .sidebar-container {
+//   	&_fixed {
+// 			position: relative;
+//     	transform: none;
+//     	top: 0;
+// 		}
+// 	}
+// 	.sidebar-wrap {
+// 	    position: fixed;
+// 	    top: 52px;
+// 	    right: -340px;
+// 	    transition: all 300ms ease;
+//     	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+//     	border-left: 10px solid $blue;
+// 	}
+// 	.sidebar-wrap-show {
+// 		right: 0;
+// 		.fe-mobi-bt {
+// 	    right: 310px;
+// 		}
+// 	}
+
+// 	.fe-mobi-bt {
+// 		display: block;
+// 	}
+}
+@media screen and (max-width: 1024px) and (min-width: 320px) { 
 .sidebar-container {
   	&_fixed {
 			position: relative;
@@ -218,27 +240,6 @@ adaptive sidebar
 	.fe-mobi-bt {
 		display: block;
 	}
-}
-@media screen and (max-width: 1024px) and (min-width: 320px) { 
-	// .sidebar-wrap {
-	//     position: fixed;
-	//     top: 52px;
-	//     right: -340px;
-	//     transition: all 300ms ease;
- //    	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
- //    	border-left: 10px solid $blue;
-	// }
-	// .sidebar-wrap-show {
-	// 	right: 0;
-	// 	.fe-mobi-bt {
-	//     right: 310px;
-	// 	}
-	// }
-
-	// .fe-mobi-bt {
-	// 	display: block;
-	// }
-
 }
 @media screen and (max-width: 375px) and (min-width: 320px) {
 	.sidebar-wrap-show {

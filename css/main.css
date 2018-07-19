@@ -5444,7 +5444,8 @@ table-box
   padding: 20px 2.93255131965%; }
 
 .table-head {
-  background-color: #ccc; }
+  border-left: 1px solid #1f4773;
+  border-right: 1px solid #1f4773; }
   .table-head_col {
     color: #fff;
     font-size: 1.2em;
@@ -5452,28 +5453,20 @@ table-box
     font-family: "roboto_condensedregular";
     background-color: #1f4773;
     padding: 10px 5px;
-    margin-left: 1px;
+    border-right: 1px solid #ccc;
     text-align: center; }
+    .table-head_col:last-child {
+      border-right: none; }
 
 .table-body {
   border-left: 1px solid #ccc; }
   .table-body_box {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    min-height: 96px;
-    padding: 10px;
+    padding: 10px !important;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc; }
   .table-body_link {
     font-size: 1.2em;
-    font-weight: 600;
-    display: block; }
+    font-weight: 600; }
     .table-body_link span {
       font-weight: normal; }
 
@@ -5484,7 +5477,8 @@ table-box
   padding: 4px 10px;
   font-size: 1em;
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: inline-block; }
 
 #fb-fighter .table-body .loss {
   background-color: #ab372b;
@@ -5493,7 +5487,7 @@ table-box
 /*=================
 adaptive
 ==================*/
-@media screen and (max-width: 1130px) and (min-width: 320px) {
+@media screen and (max-width: 1024px) and (min-width: 320px) {
   .news-post, .social-news-post, .post-latest-header, .footer-wrapper,
   .home-content-list, .home-widgets, .story, .table-box {
     width: 100%; }
@@ -5506,9 +5500,7 @@ adaptive
   .list-box {
     display: none; }
   .foot-widget-pic {
-    margin: 20px 0; } }
-
-@media screen and (max-width: 1024px) and (min-width: 320px) {
+    margin: 20px 0; }
   .home-content-list {
     padding-left: 13px; }
   .fighter-info, .bio, .stat {
@@ -5520,9 +5512,7 @@ adaptive
     text-align: center;
     margin-right: 0; }
     .fighter-main-img img {
-      width: auto; }
-  .table-head {
-    display: none; } }
+      width: auto; } }
 
 @media screen and (max-width: 768px) and (min-width: 320px) {
   .news-post {
@@ -5541,7 +5531,14 @@ adaptive
     display: block; }
   .birthday-age {
     text-align: center;
-    margin-bottom: 5px; } }
+    margin-bottom: 5px; }
+  .table-head {
+    display: none; }
+  .table-body {
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc; }
+    .table-body_box {
+      border-right: none; } }
 
 .sidebar-wrap {
   position: absolute;
@@ -5583,7 +5580,7 @@ adaptive
   padding: 11px 10px;
   background: #6a6a6a;
   color: #dddddd;
-  font-size: 1rem;
+  font-size: 1em;
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
@@ -5624,7 +5621,7 @@ adaptive
   border: 1px solid #d0d0d0;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   margin-right: 20px; }
   .tab-num span {
     display: block;
@@ -5642,37 +5639,32 @@ adaptive
 .tab-num_day {
   color: #1f4773;
   background: #fff;
-  font-size: 1.5rem; }
+  font-size: 1.5em; }
 
 .tab-num_year {
   color: #fff;
   background: #d0d0d0; }
 
-.tab-content_box-desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .tab-content_desc {
   line-height: 130%;
-  font-size: 1.2rem; }
+  font-size: 1.2em; }
 
 .item-box-pic {
   width: 20%;
   margin-right: 20px;
-  font-size: 1.5rem; }
+  font-size: 1.5em; }
   .item-box-pic img {
     width: 50px; }
 
 .item-box-title {
-  font-size: 1.2rem; }
+  font-size: 1.2em; }
   .item-box-title .name_rus {
     font-weight: 700; }
   .item-box-title .name_eng {
     font-weight: 400; }
 
 .fe-search-box {
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 700;
   color: #555;
   background: #fff;
@@ -5692,7 +5684,7 @@ adaptive
     box-shadow: inset 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
     border: none;
     border-bottom: 1px solid #aaaaaa;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 700;
     color: #555; }
   .fe-search .btn {
@@ -5764,7 +5756,7 @@ adaptive
 /*=================
 adaptive sidebar
 ==================*/
-@media screen and (max-width: 1130px) and (min-width: 320px) {
+@media screen and (max-width: 1024px) and (min-width: 320px) {
   .sidebar-container_fixed {
     position: relative;
     -webkit-transform: none;
