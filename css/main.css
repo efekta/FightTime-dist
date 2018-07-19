@@ -5570,11 +5570,11 @@ adaptive
   .table-head {
     display: none; }
   .table-body {
+    border-top: 1px solid #ccc;
     border-right: 1px solid #ccc; }
     .table-body:last-child {
       border-bottom: 1px solid #ccc; }
     .table-body_box {
-      border-top: 1px solid #ccc;
       border-bottom: 0;
       border-right: none; } }
 

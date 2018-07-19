@@ -940,14 +940,14 @@ adaptive
 			display: none;
 	}
 	.table-body {
-		// border-top: 1px solid $bg-mob-nav-link;
-		// border-bottom: 1px solid $bg-mob-nav-link;
+		border-top: 1px solid $bg-mob-nav-link;
 		border-right: 1px solid $bg-mob-nav-link;
 			&:last-child {
 				border-bottom: 1px solid $bg-mob-nav-link;
 			}
 			&_box {
-				border-top: 1px solid $bg-mob-nav-link;
+				// width: 100%;
+				// border-top: 1px solid $bg-mob-nav-link;
 				border-bottom: 0;
 				border-right: none;
 			}
