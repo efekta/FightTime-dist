@@ -5515,6 +5515,12 @@ table-box
   background-color: #ab372b;
   border-bottom: 2px solid #912f24; }
 
+.mob-data-number {
+  display: none; }
+
+.mob-order {
+  display: none; }
+
 /*=================
 adaptive
 ==================*/
@@ -5549,9 +5555,14 @@ adaptive
   .table-body {
     border-top: 1px solid #ccc;
     border-right: 1px solid #ccc; }
+    .table-body_link {
+      min-height: auto; }
     .table-body:last-child {
       border-bottom: 1px solid #ccc; }
     .table-body_box {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
       border-bottom: 0;
       border-right: none; } }
 
