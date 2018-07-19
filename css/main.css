@@ -4022,7 +4022,6 @@ h5,
 h6 {
   margin: 0;
   color: #1e1e1e;
-  font-size: 1.4em;
   font-weight: bold; }
 
 button {
@@ -4755,7 +4754,7 @@ main
 
 .home-content-link_lid {
   color: #222;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 700;
   display: block; }
   .home-content-link_lid:hover {
