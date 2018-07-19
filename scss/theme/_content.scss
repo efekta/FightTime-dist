@@ -781,13 +781,12 @@ table-box
 }
 
 .table-head {
-	// background-color: $bg-mob-nav-link;
 	border-left: 1px solid $blue;
 	border-right: 1px solid $blue;
 		&_col {
 			color: $white;
 			font-size: 1.2em;
-			font-weight: 700;
+			font-weight: 600;
 			font-family: $font-family-dop;
 			background-color: $blue;
 			padding: 10px 5px;
@@ -802,11 +801,12 @@ table-box
 	border-left: 1px solid $bg-mob-nav-link;
 		&_box {
 			padding: 10px !important;
-			height: 100%;
 			border-right: 1px solid $bg-mob-nav-link;
 			border-bottom: 1px solid $bg-mob-nav-link;
 		}
 		&_link {
+			display: inline-block;
+			vertical-align: middle;
 			font-size: 1.2em;
 			font-weight: 600;
 			 span {
@@ -824,6 +824,7 @@ table-box
   font-weight: bold;
   text-transform: uppercase;
   display: inline-block;
+  vertical-align: middle;
 }
 #fb-fighter .table-body .loss {
   background-color: #ab372b;
@@ -915,16 +916,16 @@ adaptive
 		margin-bottom: 5px;
 	}
 //table
-	.table-head {
-			display: none;
-	}
-	.table-body {
-		border-top: 1px solid $bg-mob-nav-link;
-		border-right: 1px solid $bg-mob-nav-link;
-			&_box {
-				border-right: none;
-			}
-	}
+	// .table-head {
+	// 		display: none;
+	// }
+	// .table-body {
+	// 	border-top: 1px solid $bg-mob-nav-link;
+	// 	border-right: 1px solid $bg-mob-nav-link;
+	// 		&_box {
+	// 			border-right: none;
+	// 		}
+	// }
 
 }
 
