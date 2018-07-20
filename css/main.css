@@ -5701,7 +5701,7 @@ adaptive
     display: inline-block;
     font-weight: 700; }
   .result-wrap {
-    width: 75%; }
+    width: 45%; }
   .mob-table-title {
     font-weight: 700; }
     .mob-table-title span {
@@ -5976,9 +5976,15 @@ adaptive sidebar
     border-left: 0; }
     .sidebar-wrap .sidebar-container {
       width: 100%; }
+  .tabs {
+    position: absolute;
+    z-index: 10; }
+  .sidebar, .tabs {
+    width: 100%; }
   .tab_content {
     position: absolute;
-    z-index: 999;
+    width: 100%;
+    z-index: 99;
     top: -2000px;
     -webkit-transition: all .3s;
     -o-transition: all .3s;

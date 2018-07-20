@@ -252,9 +252,17 @@ adaptive sidebar
 				width: 100%;
 			}
 	}
+	.tabs {
+		position: absolute;
+		z-index: 10;
+	}
+	.sidebar, .tabs {
+    width: 100%;
+	}
 	.tab_content {
     position: absolute;
-    z-index: 999;
+    width: 100%;
+    z-index: 99;
     top: -2000px;
     transition: all .3s;
     	&-show {

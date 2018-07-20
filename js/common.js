@@ -111,9 +111,10 @@ $('.tab_content').niceScroll({
 /* ========================
 infinite
 ==========================*/
-// $('.story').infiniteScroll({
-//   path: '.pagination__next',
-//   append: '.home-featured-sub-main',
-//   status: '.scroller-status',
-//   hideNav: '.pagination',
-// });
+$('.infinite-content').infiniteScroll({
+  path: '.pagination__next',
+  append: '.row-post',
+  status: '.page-load-status',
+  // status: '.scroller-status',
+  hideNav: '.pagination',
+});
