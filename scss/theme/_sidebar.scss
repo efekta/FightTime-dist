@@ -49,6 +49,7 @@
   	&_content {
   		height: 100vh;
   		overflow: auto;
+  		background: $gray;
   	}
 }
 
@@ -165,7 +166,7 @@
 
 .fe-mobi-bt {
     display: none;
-    color: $white;
+    color: $light-gray;
     font-weight: 700;
     text-transform: uppercase;
     z-index: 5;
@@ -179,7 +180,7 @@
     top: 50%;
     right: -35px;
     transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    // filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     transition: right 300ms ease;
 }
 
@@ -241,6 +242,41 @@ adaptive sidebar
 		display: block;
 	}
 }
+@media screen and (max-width: 480px) and (min-width: 320px) {
+	.sidebar-wrap {
+		width: 100%;
+		left: 0;
+		right: 0;
+		border-left: 0;
+			.sidebar-container {
+				width: 100%;
+			}
+	}
+	.tab_content {
+    position: absolute;
+    z-index: 999;
+    top: -2000px;
+    transition: all .3s;
+    	&-show {
+    		top: 40px;
+    	}
+}
+
+
+	.fe-mobi-bt {
+    display: absolute;
+    transform: rotate(0);
+    top: 143px;
+    width: 100%;
+    right: 0;
+    left: 0;
+    border-radius: 0;
+    padding: 11px 10px;
+    z-index: 9999;
+	}
+
+}
+
 @media screen and (max-width: 375px) and (min-width: 320px) {
 	.sidebar-wrap-show {
 	    right: -20px;

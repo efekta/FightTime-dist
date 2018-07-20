@@ -81,6 +81,7 @@ $(window).scroll(function() {
 
 $(".fe-mobi-bt").on("click", function(event) {
 	$(".sidebar-wrap").toggleClass("sidebar-wrap-show");
+	$(".tab_content").toggleClass("tab_content-show");
 });
 
 $('.fe-mobi-bt').click(function(){

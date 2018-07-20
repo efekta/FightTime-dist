@@ -851,6 +851,15 @@ table-box
 /*=================
 event
 ==================*/
+.table-events {
+	border-collapse: collapse;
+  border-spacing: 0;
+  border-bottom: 1px solid $bg-mob-nav-link;
+}
+#fb-events-item-table table thead tr {
+    color: #fff;
+    background: #1f4773;
+}
 .events {
 	&_date {
 		font-weight: 700;
@@ -1016,6 +1025,9 @@ adaptive
 			&_link {
 				width: 100%;
 				min-height: auto;
+				text-align: center;
+				margin: 10px 0;
+				order: -1;
 			}
 			&:last-child {
 				border-bottom: 1px solid $bg-mob-nav-link;
@@ -1032,10 +1044,19 @@ adaptive
 	}
 	.mob-order-2 {
 		order: 2;
-		text-align: center;
+		text-align: left;
 	}
 	.mob-order-num {
-		position: absolute;
+    position: absolute;
+    right: 0;
+    top: 65%;
+    width: 50%;
+	}
+	.mob-order-num2 {
+		right: 75px;
+	}
+	p.mob-table-title {
+		margin: 10px 0;
 	}
 	// .mob-order-1 {
 	// 	text-align: center;
@@ -1058,18 +1079,21 @@ adaptive
 		display: inline-block;
 		font-weight: 700;
 	}
-	// .result-wrap {
-	// 	text-align: right;
-	// 	margin-right: 10px;
-	// }
-	// .mob-table-title {
-	// 	font-weight: 700;
-	// 		span {
-	// 			display: block;
-	// 			text-align: center;
-	// 			font-weight: normal;
-	// 		}
-	// }
+	.result-wrap {
+		width: 75%;		
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+	}
+	.mob-table-title {
+		font-weight: 700;
+			span {
+				display: block;
+				text-align: center;
+				font-weight: normal;
+			}
+	}
 }
 @media screen and (max-width: 768px) and (min-width: 320px) {
 	.news-post {
