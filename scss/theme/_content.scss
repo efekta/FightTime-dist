@@ -762,11 +762,9 @@ stat
 }
 .fighter-subtitle {
 	margin: 20px 0;
-		h2 {
-			font-size: 1.3em;
-  		font-weight: 700;
-  		color: darken($dark-gray, 30%);
-		}
+	font-size: 1.3em;
+	font-weight: 700;
+	color: darken($dark-gray, 30%);
 }
 
 .stat-sub-box_block {

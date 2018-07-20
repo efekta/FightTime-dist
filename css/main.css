@@ -5426,11 +5426,10 @@ stat
   background: #ab372b; }
 
 .fighter-subtitle {
-  margin: 20px 0; }
-  .fighter-subtitle h2 {
-    font-size: 1.3em;
-    font-weight: 700;
-    color: #2b2b2b; }
+  margin: 20px 0;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #2b2b2b; }
 
 .stat-sub-box_block {
   margin-left: -13px; }
