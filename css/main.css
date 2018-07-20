@@ -5555,13 +5555,22 @@ event
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  text-align: right; }
+  .fightinfo-item_loss {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: left; }
 
 .fightinfo-pic img {
   width: auto; }
 
 .fightinfo-item_content {
-  margin-right: 10px; }
+  margin: 0 10px; }
 
 .fightinfo-vs {
   text-transform: uppercase;
@@ -5576,6 +5585,42 @@ event
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+
+.fightinfo .table-body_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px; }
+  .fightinfo .table-body_link_loss {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+
+.fightinfo .result-wrap {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 10px; }
+  .fightinfo .result-wrap_loss {
+    text-align: left; }
+
+.fightinfo .referee-outcome {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #848484; }
+
+.fightinfo .outcome {
+  font-weight: 900;
+  color: #777; }
+  .fightinfo .outcome .method {
+    font-weight: normal; }
 
 /*=================
 adaptive

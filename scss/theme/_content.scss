@@ -889,22 +889,21 @@ event
 		}
 }
 .fightinfo {
-	// display: flex;
-	// justify-content: space-between;
 		&-item {
 				display: flex;
 				margin-bottom: 10px;
-		// 	width: 50%;
+				justify-content: flex-end;
+    		text-align: right;
+    		&_loss {
+    			justify-content: flex-start;
+    			text-align: left;
+    		}
 		}
-		// &-pic {
-		// 	display: inline-block;
-		// }
 		&-pic img {
 			width: auto;
 		}
 		&-item_content {
-			margin-right: 10px;
-			// display: inline-block;
+			margin: 0 10px;
 		}
 		&-vs {
 			text-transform: uppercase;
@@ -913,6 +912,41 @@ event
 			display: flex;
 			align-items: center;
 			justify-content: center;
+		}
+		.table-body_link {
+			display: flex;
+    	align-items: flex-end;
+    	flex-direction: column;
+    	width: 100%;
+    	margin-bottom: 20px;
+	    	&_loss {
+	    		align-items: flex-start;
+	    	}
+		}
+		.result-wrap {
+			width: 100%;
+			text-align: right;
+			margin-bottom: 10px;
+				&_loss {
+					text-align: left;
+				}
+		}
+		.referee-outcome {
+			margin: 10px 0;
+			font-size: 1.2em;
+			color: lighten($dark-gray, 5%);
+			.referee {
+				// font-size: 1.2em;
+				// color: lighten($dark-gray, 5%);
+			}
+		}
+		.outcome {
+			font-weight: 900;
+			// font-size: 1.2em;
+			color: $dark-gray;
+			.method {
+				font-weight: normal;
+			}
 		}
 }
 
