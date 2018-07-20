@@ -12,6 +12,9 @@
     min-height: 75px;
     background: $white;
     box-shadow: 0 7px 10px -5px rgba(0,0,0,0.3);
+    @include screen(320px, 1024px) {
+      background-color: red;
+    }
   }
 }
 .page-head_fixed {
