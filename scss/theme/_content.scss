@@ -847,9 +847,7 @@ table-box
 .mob-data-number {
 	display: none;
 }
-.mob-order {
-	display: none;
-}
+
 /*=================
 event
 ==================*/
@@ -1012,10 +1010,11 @@ adaptive
 			display: none;
 	}
 	.table-body {
+		position: relative;
 		border-top: 1px solid $bg-mob-nav-link;
 		border-right: 1px solid $bg-mob-nav-link;
 			&_link {
-				// width: 100%;
+				width: 100%;
 				min-height: auto;
 			}
 			&:last-child {
@@ -1026,6 +1025,17 @@ adaptive
 				border-bottom: 0;
 				border-right: none;
 			}
+	}
+	.mob-order-1 {
+		order: 1;
+		text-align: center;
+	}
+	.mob-order-2 {
+		order: 2;
+		text-align: center;
+	}
+	.mob-order-num {
+		position: absolute;
 	}
 	// .mob-order-1 {
 	// 	text-align: center;
@@ -1044,10 +1054,10 @@ adaptive
 	// .mob-name-fight {
 	// 	display: none;
 	// }
-	// .mob-data-number {
-	// 	display: inline-block;
-	// 	font-weight: 700;
-	// }
+	.mob-data-number {
+		display: inline-block;
+		font-weight: 700;
+	}
 	// .result-wrap {
 	// 	text-align: right;
 	// 	margin-right: 10px;
