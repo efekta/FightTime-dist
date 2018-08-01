@@ -1,131 +1,439 @@
 doctype html
 html(lang='ru')
-head
-meta(charset='UTF-8')
-meta(name='description', content='')
-meta(name='author', content='')
-meta(name='viewport', content='width=device-width, initial-scale=1.0')
-title Новость
-link(rel='stylesheet', href='css/main.css')
-body
-	// mob menu
-	include modules/mob-menu.pug
-	// end mob menu
-	// wrapper-page
-	.wrapper-page
-	// list-box
-	include modules/list-box.pug
-	// end list-box
-	// header
-	include modules/header.pug
-	// end header
-
-	// main
-	.container
-		.main
-			// news-post
-			article.news-post
-				.news-post-cat-contain
-					.news-post-cat-date
-						span.news-post_month Апр
-						span.news-post_day 23,
-						span.news-post_year 2018
-					.news-post_author_box
-						span.news-post_author Автор
-						span.news-post_author-name Fighttime
-					.featured-lid-news.page-news_featured-lid-news
-						a(href='') Новости
-				.news-post-title
-					h1
-						| Федор Емельяненко: «Могу с уверенностью сказать, что мы провели огромную работу к бою с Фрэнком Миром»
-				.news-post-box-pic
-					img(src='img/content/34d1b0dac3b88cd536eb066f7fcba196_XL.jpg', alt='')
-				.news-post-container
-					p
-						| Легендарный российский тяжеловес Федор Емельяненко, которому уже на этой неделе предстоит встретиться с экс-чемпионом UFC, Фрэнком Миром, в рамках четвертьфинального поединка Гран-При тяжеловесов Bellator, рассказал болельщикам о своей подготовке к бою.
-				.news-post-container_desc
-					blockquote
-						p
-							| «До моего боя с Фрэнком Миром осталась одна неделя», - написал Емельяненко в своем Инстаграм-аккаунте. «Подготовка к этому поединку разделилась на три этапа, которые прошли в Москве, в Старом Осколе, и в Амстердаме с моими тренерами Питером Тайессе и Хансом Крусом. Фрэнк – сильный боец с хорошей ударной техникой, он прекрасный грэпплер и опытный спортсмен. До поединка осталось совсем немного времени, и я могу с уверенностью сказать, что мы провели огромную работу к этому бою. Я и мой тренерский штаб выложились на 100%, поработали над тактикой. В Старом Осколе мне помогали ребята из моей команды, в Амстердаме – кикбоксеры из Нидерландов, среди которых был Хесди Гергес. Учитывая то, что Фрэнк хороший грэпплер, мы достаточно много времени уделили тренировкам в партере. Тщательно проработали защиту и нападение в стойке»
-				.news-post-container
-					p
-						| Напомним, что поединок Федора Емельяненко и Фрэнка Мира станет главным событием турнира Bellator 198, который состоится 28 апреля в Розмонте, штат Иллинойс.
-			// end news-post
-			// social-news-post
-			.social-news-post
-				// post-tags
-				.post-tags
-					span.post-tags-header Тэги
-					a.post-tags-link(href='') Федор Емельяненко
-					a.post-tags-link(href='') Федор Емельяненко
-				// end post-tags
-			// end social-news-post
-			// sidebar tab
-			include modules/sidebar.pug
-			// end sidebar tab
-			.post-latest
-				h2 Похожие материалы
-			// story-section
-			.story
-				.row.no-gutters
-					.col-xs-12.col-sm-6
-						article.post.home-featured-sub-main
-							a.featured-item.featured-sub-item(href='#')
-								.featured-item-pic.story-widget-grid
-									img(src='img/content/7177ba1fd45146531e394a47dd00ee67_M.jpg', alt='')
-								.featured-lid.home-widge-box-lid
-									.featured-lid-news
-										span Новости
-									.featured-lid-news-title
-										h2 Даниэль Кормье: «Фергюсон крут, и никогда не сдастся по собственной воле»
-							.read-share-overlay
-								.read-share-overlay-wrapp
-									a.read-share-overlay__link.read-share-overlay__link-sub(href='#') Смотреть
-									ul.read-share-overlay-social
-										li.read-share-overlay-social__item
-											a.read-share-overlay-social__link.read-share-overlay-social__link-sub.read-share-vk(href='')
-												i.fab.fa-vk
-										li.read-share-overlay-social__item
-											a.read-share-overlay-social__link.read-share-overlay-social__link-sub.read-share-tw(href='')
-												i.fab.fa-twitter
-										li.read-share-overlay-social__item
-											a.read-share-overlay-social__link.read-share-overlay-social__link-sub.read-share-comments(href='')
-												i.fas.fa-comments
-					.col-xs-12.col-sm-6
-						article.post.home-featured-sub-main
-							a.featured-item.featured-sub-item(href='#')
-								.featured-item-pic.story-widget-grid
-									img(src='img/content/9ae78f836b04687a57dec594c400ecf2_M.jpg', alt='')
-								.featured-lid.home-widge-box-lid
-									.featured-lid-news
-										span Новости
-									.featured-lid-news-title
-										h2 Даниэль Кормье: «Фергюсон крут, и никогда не сдастся по собственной воле»
-							.read-share-overlay
-								.read-share-overlay-wrapp
-									a.read-share-overlay__link.read-share-overlay__link-sub(href='#') Смотреть
-									ul.read-share-overlay-social
-										li.read-share-overlay-social__item
-											a.read-share-overlay-social__link.read-share-overlay-social__link-sub.read-share-vk(href='')
-												i.fab.fa-vk
-										li.read-share-overlay-social__item
-											a.read-share-overlay-social__link.read-share-overlay-social__link-sub.read-share-tw(href='')
-												i.fab.fa-twitter
-										li.read-share-overlay-social__item
-											a.read-share-overlay-social__link.read-share-overlay-social__link-sub.read-share-comments(href='')
-												i.fas.fa-comments
-			// end story-section
-		// end main
-	// end wrapper-page
-	// footer-wrapper
-	include modules/footer.pug
-	// end footer-wrapper
-
-
-	// scripts
-script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-script(src='libs/fontawesome-pro/fontawesome-all.js')
-script(src='libs/nicescroll/jquery.nicescroll.min.js')
-script(src='js/common.js')
-
-
+  head
+    meta(charset='UTF-8')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Новость
+    link(rel='stylesheet', href='css/main.css')
+  body
+    // mob menu
+    nav.mob-menu.head-nav.head-nav-mob
+      button.menu-gamburger-close(type='button')
+        i.fal.fa-times-circle.icon-gamburger-close
+      ul.menu-list-mob
+        li.menu__item_form
+          form.search-form-menu(action='https://fighttime.ru/search-results.html?searchid=1933334', method='get', target='_self')
+            input(type='text', name='text', value='')
+        li.menu__item
+          a.menu__link(href='') Новости
+        li.menu__item
+          a.menu__link(href='') Видео
+        li.menu__item
+          a.menu__link(href='') Рейтинг ММА
+        li.menu__item
+          a.menu__link(href='') Форум
+        li.menu__item
+          a.menu__link(href='') О портале
+        li.menu__item
+          a.menu__link(href='https://www.facebook.com/FightTime.ru', target='_blank')
+            span Facebook
+        li.menu__item
+          a.menu__link(href='https://twitter.com/fighttimeru', target='_blank')
+            span Twitter
+        li.menu__item
+          a.menu__link(href='https://vk.com/fighttimeru', target='_blank')
+            span Вконтакте
+        li.menu__item
+          a.menu__link(href='https://ok.ru/group/51264289898695', target='_blank')
+            span Одноклассники
+        li.menu__item
+          a.menu__link(href='https://www.instagram.com/fighttimeru', target='_blank')
+            span Instagram
+    // end mob menu
+    // wrapper-page
+    .wrapper-page
+      // list-box
+      .list-box
+        .list-box-item.list-box-item_right
+          a.list-box__link.list-box__link_next(href='')
+            i.fal.fa-chevron-right
+          .list-content.prev-next-text
+            a(href='') Жакаре Соуза: «Спустя два поединка я стану чемпионом UFC»
+        .list-box-item.list-box-item_left
+          a.list-box__link.list-box__link_prev(href='')
+            i.fal.fa-chevron-left
+          .list-content.prev-prev-text
+            a(href='') Оездемир и Шоган возглавят турнир UFC Fight Night 134 в Гамбурге
+      // end list-box
+      // header
+      .head-wrap
+        .container
+          header#nav-wrap.page-head
+            // <div class="container">
+            #nav-icon4.menu-gamburger
+              span
+              span
+              span
+            .box-logo
+              a.box-logo__link(href='')
+                .box-logo__link-pic
+                  img.logo-big(src='img/icon/logo-small.png', alt='Логотип')
+                  img.logo-small(src='img/icon/logo-mobile.png', alt='Логотип')
+            // head-nav
+            nav.head-nav.head-nav-mob
+              // <button class="close"></button>
+              ul.menu
+                li.menu__item
+                  a.menu__link(href='') Новости
+                li.menu__item
+                  a.menu__link(href='') Видео
+                li.menu__item
+                  a.menu__link(href='') Рейтинг ММА
+                li.menu__item
+                  a.menu__link(href='') Форум
+                li.menu__item
+                  a.menu__link(href='') О портале
+            // social
+            .social-nav
+              .social
+                ul.social__list
+                  li.social__item
+                    svg.svg-inline--fa.fa-vk.fa-w-18(aria-hidden='true', data-fa-processed='', data-prefix='fab', data-icon='vk', role='img', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 576 512')
+                      path(fill='currentColor', d='M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z')
+                  li.social__item
+                    svg.svg-inline--fa.fa-twitter.fa-w-16(aria-hidden='true', data-fa-processed='', data-prefix='fab', data-icon='twitter', role='img', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 512 512')
+                      path(fill='currentColor', d='M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z')
+                  li.social__item
+                    svg.svg-inline--fa.fa-plus.fa-w-14(aria-hidden='true', data-fa-processed='', data-prefix='far', data-icon='plus', role='img', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 448 512')
+                      path(fill='currentColor', d='M436 228H252V44c0-6.6-5.4-12-12-12h-32c-6.6 0-12 5.4-12 12v184H12c-6.6 0-12 5.4-12 12v32c0 6.6 5.4 12 12 12h184v184c0 6.6 5.4 12 12 12h32c6.6 0 12-5.4 12-12V284h184c6.6 0 12-5.4 12-12v-32c0-6.6-5.4-12-12-12z')
+                // social-dropdown
+                .social-dropdown
+                  ul.social-drop-list
+                    li.social-drop-list__item
+                      a.social-drop-list__link(href='https://www.facebook.com/FightTime.ru')
+                        svg.svg-inline--fa.fa-facebook-f.fa-w-9(aria-hidden='true', data-fa-processed='', data-prefix='fab', data-icon='facebook-f', role='img', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 264 512')
+                          path(fill='currentColor', d='M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229')
+                        span Facebook
+                    li.social-drop-list__item
+                      a.social-drop-list__link(href='https://twitter.com/fighttimeru')
+                        svg.svg-inline--fa.fa-twitter.fa-w-16(aria-hidden='true', data-fa-processed='', data-prefix='fab', data-icon='twitter', role='img', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 512 512')
+                          path(fill='currentColor', d='M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z')
+                        span Twitter
+                    li.social-drop-list__item
+                      a.social-drop-list__link(href='https://vk.com/fighttimeru')
+                        svg.svg-inline--fa.fa-vk.fa-w-18(aria-hidden='true', data-fa-processed='', data-prefix='fab', data-icon='vk', role='img', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 576 512')
+                          path(fill='currentColor', d='M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z')
+                        span Вконтакте
+                    li.social-drop-list__item
+                      a.social-drop-list__link(href='https://ok.ru/group/51264289898695')
+                        svg.svg-inline--fa.fa-odnoklassniki.fa-w-10(aria-hidden='true', data-fa-processed='', data-prefix='fab', data-icon='odnoklassniki', role='img', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 320 512')
+                          path(fill='currentColor', d='M275.1 334c-27.4 17.4-65.1 24.3-90 26.9l20.9 20.6 76.3 76.3c27.9 28.6-17.5 73.3-45.7 45.7-19.1-19.4-47.1-47.4-76.3-76.6L84 503.4c-28.2 27.5-73.6-17.6-45.4-45.7 19.4-19.4 47.1-47.4 76.3-76.3l20.6-20.6c-24.6-2.6-62.9-9.1-90.6-26.9-32.6-21-46.9-33.3-34.3-59 7.4-14.6 27.7-26.9 54.6-5.7 0 0 36.3 28.9 94.9 28.9s94.9-28.9 94.9-28.9c26.9-21.1 47.1-8.9 54.6 5.7 12.4 25.7-1.9 38-34.5 59.1zM30.3 129.7C30.3 58 88.6 0 160 0s129.7 58 129.7 129.7c0 71.4-58.3 129.4-129.7 129.4s-129.7-58-129.7-129.4zm66 0c0 35.1 28.6 63.7 63.7 63.7s63.7-28.6 63.7-63.7c0-35.4-28.6-64-63.7-64s-63.7 28.6-63.7 64z')
+                        span Одноклассники
+                    li.social-drop-list__item
+                      a.social-drop-list__link(href='https://www.instagram.com/fighttimeru')
+                        svg.svg-inline--fa.fa-instagram.fa-w-14(aria-hidden='true', data-fa-processed='', data-prefix='fab', data-icon='instagram', role='img', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 448 512')
+                          path(fill='currentColor', d='M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z')
+                        span Instagram
+                    li.social-drop-list__item
+                      a.social-drop-list__link(href='/rssfeed.feed?type=rss')
+                        svg.svg-inline--fa.fa-rss.fa-w-14(aria-hidden='true', data-fa-processed='', data-prefix='far', data-icon='rss', role='img', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 448 512')
+                          path(fill='currentColor', d='M80 368c17.645 0 32 14.355 32 32s-14.355 32-32 32-32-14.355-32-32 14.355-32 32-32m0-48c-44.183 0-80 35.817-80 80s35.817 80 80 80 80-35.817 80-80-35.817-80-80-80zm367.996 147.615c-6.449-237.834-198.057-429.163-435.61-435.61C5.609 31.821 0 37.229 0 44.007v24.02c0 6.482 5.147 11.808 11.626 11.992 211.976 6.04 382.316 176.735 388.354 388.354.185 6.479 5.51 11.626 11.992 11.626h24.02c6.78.001 12.187-5.608 12.004-12.384zm-136.239-.05C305.401 305.01 174.966 174.599 12.435 168.243 5.643 167.977 0 173.444 0 180.242v24.024c0 6.431 5.072 11.705 11.497 11.98 136.768 5.847 246.411 115.511 252.258 252.258.275 6.425 5.549 11.497 11.98 11.497h24.024c6.797-.001 12.264-5.644 11.998-12.436z')
+                        span Rss
+              button.search-btn(type='button')
+                svg.svg-inline--fa.fa-search.fa-w-16(aria-hidden='true', data-fa-processed='', data-prefix='far', data-icon='search', role='img', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 512 512')
+                  path(fill='currentColor', d='M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z')
+            // search-bar
+            .search-bar
+              form.search-bar-form(action='#')
+                input(type='search', placeholder='Введите запрос для поиска')
+                span.search-bar-form-close
+                  svg.svg-inline--fa.fa-times.fa-w-12(aria-hidden='true', data-fa-processed='', data-prefix='far', data-icon='times', role='img', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 384 512')
+                    path(fill='currentColor', d='M231.6 256l130.1-130.1c4.7-4.7 4.7-12.3 0-17l-22.6-22.6c-4.7-4.7-12.3-4.7-17 0L192 216.4 61.9 86.3c-4.7-4.7-12.3-4.7-17 0l-22.6 22.6c-4.7 4.7-4.7 12.3 0 17L152.4 256 22.3 386.1c-4.7 4.7-4.7 12.3 0 17l22.6 22.6c4.7 4.7 12.3 4.7 17 0L192 295.6l130.1 130.1c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17L231.6 256z')
+            // </div>
+      // end header
+      // main
+      .container
+        .main
+          // news-post
+          article.news-post
+            .news-post-cat-contain
+              .news-post-cat-date
+                span.news-post_month Апр
+                span.news-post_day 23,
+                span.news-post_year 2018
+              .news-post_author_box
+                span.news-post_author Автор
+                span.news-post_author-name Fighttime
+              .featured-lid-news.page-news_featured-lid-news
+                a(href='') Новости
+            .news-post-title
+              h1
+                | Федор Емельяненко: «Могу с уверенностью сказать, что мы провели огромную работу к бою с Фрэнком Миром»
+            .news-post-box-pic
+              img(src='img/content/34d1b0dac3b88cd536eb066f7fcba196_XL.jpg', alt='')
+            .news-post-container
+              p
+                | Легендарный российский тяжеловес Федор Емельяненко, которому уже на этой неделе предстоит встретиться с экс-чемпионом UFC, Фрэнком Миром, в рамках четвертьфинального поединка Гран-При тяжеловесов Bellator, рассказал болельщикам о своей подготовке к бою.
+            .news-post-container_desc
+              blockquote
+                p
+                  | «До моего боя с Фрэнком Миром осталась одна неделя», - написал Емельяненко в своем Инстаграм-аккаунте. «Подготовка к этому поединку разделилась на три этапа, которые прошли в Москве, в Старом Осколе, и в Амстердаме с моими тренерами Питером Тайессе и Хансом Крусом. Фрэнк – сильный боец с хорошей ударной техникой, он прекрасный грэпплер и опытный спортсмен. До поединка осталось совсем немного времени, и я могу с уверенностью сказать, что мы провели огромную работу к этому бою. Я и мой тренерский штаб выложились на 100%, поработали над тактикой. В Старом Осколе мне помогали ребята из моей команды, в Амстердаме – кикбоксеры из Нидерландов, среди которых был Хесди Гергес. Учитывая то, что Фрэнк хороший грэпплер, мы достаточно много времени уделили тренировкам в партере. Тщательно проработали защиту и нападение в стойке»
+            .news-post-container
+              p
+                | Напомним, что поединок Федора Емельяненко и Фрэнка Мира станет главным событием турнира Bellator 198, который состоится 28 апреля в Розмонте, штат Иллинойс.
+          // end news-post
+          // social-news-post
+          .social-news-post
+            // post-tags
+            .post-tags
+              span.post-tags-header Тэги
+              a.post-tags-link(href='') Федор Емельяненко
+              a.post-tags-link(href='') Федор Емельяненко
+            // end post-tags
+          // end social-news-post
+          // sidebar tab
+          #sidebar.sidebar-wrap
+            button.fe-mobi-bt(type='button') Открыть
+            .sidebar-container
+              .sidebar
+                .tabs
+                  span.tab
+                    i.far.fa-calendar-alt
+                    | 										Календарь
+                  span.tab
+                    i.far.fa-chart-line
+                    | 										Бойцы
+                .tab_content
+                  .tab_items
+                    a.sidebar-item(href='')
+                      .tab-num
+                        span.tab-num_month Апр
+                        span.tab-num_day 20
+                        span.tab-num_year 2018
+                      p.tab-content_desc One Championship Heroes of Honor
+                    a.sidebar-item(href='')
+                      .tab-num
+                        span.tab-num_month Апр
+                        span.tab-num_day 21
+                        span.tab-num_year 2018
+                      p.tab-content_desc UFC Fight Night 128 Barboza vs. Lee
+                    a.sidebar-item(href='')
+                      .tab-num
+                        span.tab-num_month Апр
+                        span.tab-num_day 21
+                        span.tab-num_year 2018
+                      p.tab-content_desc ACB 85 Leone vs. Ginazov
+                    a.sidebar-item(href='')
+                      .tab-num
+                        span.tab-num_month Апр
+                        span.tab-num_day 28
+                        span.tab-num_year 2018
+                      p.tab-content_desc Bellator 198 Fedor vs. Mir
+                    a.sidebar-item(href='')
+                      .tab-num
+                        span.tab-num_month Май
+                        span.tab-num_day 4
+                        span.tab-num_year 2018
+                      p.tab-content_desc WFCA 48 Baku Battle
+                    a.sidebar-item(href='')
+                      .tab-num
+                        span.tab-num_month Май
+                        span.tab-num_day 5
+                        span.tab-num_year 2018
+                      p.tab-content_desc FNG Fight Nights Global 87
+                    a.sidebar-item(href='')
+                      .tab-num
+                        span.tab-num_month Май
+                        span.tab-num_day 5
+                        span.tab-num_year 2018
+                      p.tab-content_desc ACB 86 Balaev vs. Raisov 2
+                    a.sidebar-item(href='')
+                      .tab-num
+                        span.tab-num_month Май
+                        span.tab-num_day 6
+                        span.tab-num_year 2018
+                      p.tab-content_desc Rizin FF Rizin 10
+                    a.sidebar-item(href='')
+                      .tab-num
+                        span.tab-num_month Май
+                        span.tab-num_day 12
+                        span.tab-num_year 2018
+                      p.tab-content_desc One Championship Grit & Glory
+                    a.sidebar-item(href='')
+                      .tab-num
+                        span.tab-num_month Май
+                        span.tab-num_day 6
+                        span.tab-num_year 2018
+                      p.tab-content_desc UFC 224 Nunes vs. Pennington
+                    a.sidebar-item(href='')
+                      .tab-num
+                        span.tab-num_month Май
+                        span.tab-num_day 12
+                        span.tab-num_year 2018
+                      p.tab-content_desc One Championship Grit & Glory
+                    a.sidebar-item(href='')
+                      .tab-num
+                        span.tab-num_month Май
+                        span.tab-num_day 12
+                        span.tab-num_year 2018
+                      p.tab-content_desc M-1 Challenge 91 Doskalchuk vs. Ashimov
+                  .tab_items
+                    .fe-search-box
+                      form.fe-search(action='#')
+                        input#search_fighters.form-control.searchfeeld.query_fighters(name='namesearch', type='text', placeholder='Введите имя бойца', value='')
+                        .br-box
+                          button.btn.br-box__link(type='button')
+                            i.far.fa-search
+                    a.sidebar-item(href='')
+                      .item-box-pic
+                        img(src='img/sidebar/29688.jpg', alt='')
+                      .item-box-title
+                        p.name_rus Конор МакГрегор
+                        p.name_eng (Conor McGregor)
+                    a.sidebar-item(href='')
+                      .item-box-pic
+                        img(src='img/sidebar/5635.jpg', alt='')
+                      .item-box-title
+                        p.name_rus Хабиб Нурмагомедов
+                        p.name_eng (Khabib Nurmagomedov)
+                    a.sidebar-item(href='')
+                      .item-box-pic
+                        img(src='img/sidebar/31239.jpg', alt='')
+                      .item-box-title
+                        p.name_rus Тони Фергюсон
+                        p.name_eng (Tony Ferguson)
+                    a.sidebar-item(href='')
+                      .item-box-pic
+                        img(src='img/sidebar/27944.jpg', alt='')
+                      .item-box-title
+                        p.name_rus Джон Джонс
+                        p.name_eng (Jon Jones)
+          // end sidebar tab
+          .post-latest
+            h2 Похожие материалы
+          // story-section
+          .story
+            .row.no-gutters
+              .col-xs-12.col-sm-6
+                article.post.home-featured-sub-main
+                  a.featured-item.featured-sub-item(href='#')
+                    .featured-item-pic.story-widget-grid
+                      img(src='img/content/7177ba1fd45146531e394a47dd00ee67_M.jpg', alt='')
+                    .featured-lid.home-widge-box-lid
+                      .featured-lid-news
+                        span Новости
+                      .featured-lid-news-title
+                        h2 Даниэль Кормье: «Фергюсон крут, и никогда не сдастся по собственной воле»
+                  .read-share-overlay
+                    .read-share-overlay-wrapp
+                      a.read-share-overlay__link.read-share-overlay__link-sub(href='#') Смотреть
+                      ul.read-share-overlay-social
+                        li.read-share-overlay-social__item
+                          a.read-share-overlay-social__link.read-share-overlay-social__link-sub.read-share-vk(href='')
+                            i.fab.fa-vk
+                        li.read-share-overlay-social__item
+                          a.read-share-overlay-social__link.read-share-overlay-social__link-sub.read-share-tw(href='')
+                            i.fab.fa-twitter
+                        li.read-share-overlay-social__item
+                          a.read-share-overlay-social__link.read-share-overlay-social__link-sub.read-share-comments(href='')
+                            i.fas.fa-comments
+              .col-xs-12.col-sm-6
+                article.post.home-featured-sub-main
+                  a.featured-item.featured-sub-item(href='#')
+                    .featured-item-pic.story-widget-grid
+                      img(src='img/content/9ae78f836b04687a57dec594c400ecf2_M.jpg', alt='')
+                    .featured-lid.home-widge-box-lid
+                      .featured-lid-news
+                        span Новости
+                      .featured-lid-news-title
+                        h2 Даниэль Кормье: «Фергюсон крут, и никогда не сдастся по собственной воле»
+                  .read-share-overlay
+                    .read-share-overlay-wrapp
+                      a.read-share-overlay__link.read-share-overlay__link-sub(href='#') Смотреть
+                      ul.read-share-overlay-social
+                        li.read-share-overlay-social__item
+                          a.read-share-overlay-social__link.read-share-overlay-social__link-sub.read-share-vk(href='')
+                            i.fab.fa-vk
+                        li.read-share-overlay-social__item
+                          a.read-share-overlay-social__link.read-share-overlay-social__link-sub.read-share-tw(href='')
+                            i.fab.fa-twitter
+                        li.read-share-overlay-social__item
+                          a.read-share-overlay-social__link.read-share-overlay-social__link-sub.read-share-comments(href='')
+                            i.fas.fa-comments
+          // end story-section
+        // end main
+    // end wrapper-page
+    // footer-wrapper
+    .container
+      .row.no-gutters.footer-wrapper
+        .col-xs-12.col-sm-6
+          ul.footer-list
+            li.footer-item
+              a.footer-link(href='') Конор МакГрегор
+            li.footer-item
+              a.footer-link(href='') Хабиб Нурмагомедов
+            li.footer-item
+              a.footer-link(href='') Федор Емельяненко
+            li.footer-item
+              a.footer-link(href='') Александр Шлеменко
+            li.footer-item
+              a.footer-link(href='') Андрей Корешков
+            li.footer-item
+              a.footer-link(href='') Жозе Альдо
+            li.footer-item
+              a.footer-link(href='') Доминик Круз
+            li.footer-item
+              a.footer-link(href='') Деметриус Джонсон
+            li.footer-item
+              a.footer-link(href='') Вячеслав Василевский
+            li.footer-item
+              a.footer-link(href='') Йоанна Еджейчик
+            li.footer-item
+              a.footer-link(href='') Стипе Миочич
+            li.footer-item
+              a.footer-link(href='') Холли Холм
+            li.footer-item
+              a.footer-link(href='') Алистар Оверим
+            li.footer-item
+              a.footer-link(href='') Bellator
+            li.footer-item
+              a.footer-link(href='') Strikeforce
+            li.footer-item
+              a.footer-link(href='') THE ULTIMATE FIGHTER
+            li.footer-item
+              a.footer-link(href='') UFC
+            li.footer-item
+              a.footer-link(href='') Андерсон Сильва
+            li.footer-item
+              a.footer-link(href='') Витор Белфорт
+            li.footer-item
+              a.footer-link(href='') Дана Уайт
+            li.footer-item
+              a.footer-link(href='') Даниэль Кормье
+            li.footer-item
+              a.footer-link(href='') Джон Джонс
+            li.footer-item
+              a.footer-link(href='') Джуниор Дос Сантос
+            li.footer-item
+              a.footer-link(href='') Кейн Веласкес
+            li.footer-item
+              a.footer-link(href='') Крис Вайдмэн
+            li.footer-item
+              a.footer-link(href='') ММА
+            li.footer-item
+              a.footer-link(href='') Ронда Роузи
+        .col-xs-12.col-sm-6
+          .foot-widget
+            .foot-widget-pic
+              img(src='img/icon/logo-foot.png', alt='Top News')
+            .foot-widget-content
+              p
+                | Средство массовой информации сетевое издание «FightTime» зарегистрировано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор).
+            .foot-widget-content
+              p
+                | Свидетельство о регистрации средства массовой информации Эл № ФС77-72103 от 29.12.2017
+            .foot-widget-content
+              p
+                | Авторское право © 2012 FightTime.Ru. Все права на материалы, размещенные на сайте, защищены в соответствии с российским и международным законодательством об авторском праве и смежных правах.
+            .foot-widget-content
+              p
+                | При любом использовании материалов сайта активная ссылка на 
+                a(href='https://fighttime.ru/') FightTime.ru
+                |  обязательна.
+    // end footer-wrapper
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='libs/fontawesome-pro/fontawesome-all.js')
+    script(src='libs/nicescroll/jquery.nicescroll.min.js')
+    script(src='js/common.js')

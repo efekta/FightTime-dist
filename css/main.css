@@ -4856,13 +4856,6 @@ story section
 .story-widget-grid {
   position: relative;
   height: 240px; }
-  .story-widget-grid img {
-    height: 100%;
-    min-width: 300px;
-    position: absolute;
-    left: -9999px;
-    right: -9999px;
-    margin: auto; }
 
 .page-load-status {
   background: #00aeef;

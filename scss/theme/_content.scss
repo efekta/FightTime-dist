@@ -64,7 +64,7 @@ main
 	background: $white;
 }
 .home-content-list {
-	@include calc;
+	@include calc(100%, 340px);
 	display: flex;
 	flex-wrap: wrap;
 	padding: 20px 2.93255131965%;
@@ -123,7 +123,7 @@ main
 	home-widget
 ================*/
 .home-widgets {
-	@include calc;
+	@include calc(100%, 340px);
 }
 .home-featured-sub-main {
 	position: relative;
@@ -200,7 +200,7 @@ main
 story section
 ==================*/
 .story {
-	@include calc;
+	@include calc(100%, 340px);
 	margin-top: 75px;
 }
 .story_main_wrapp {
@@ -210,9 +210,9 @@ story section
 .story-widget-grid {
 	position: relative;
 	height: 240px;
-		img {
-			@include img;
-		}
+		// img {
+		// 	@include img;
+		// }
 }
 
 .page-load-status {
@@ -220,7 +220,7 @@ story section
 	padding: 10px 5px;
 	text-align: center;
 	cursor: pointer;
-	@include calc;
+	@include calc(100%, 340px);
 		p {
 		width: 100%;
 		display: inline-block;
@@ -237,7 +237,7 @@ news
 ==================*/
 .news-post {
 	padding: 20px 2.93255131965%;
-	@include calc;
+	@include calc(100%, 340px);
 }
 .news-post-cat-date {
 	display: inline-block;
@@ -293,7 +293,7 @@ social-news-post
 ==================*/
 .social-news-post {
 	padding: 20px 2.93255131965%;
-	@include calc;
+	@include calc(100%, 340px);
 }
 .social-news-post_title {
 	position: relative;
@@ -537,7 +537,7 @@ a.feedback-footer__day-link:hover {
 
 .post-latest-header {
 	padding: 30px 0 0 0;
-	@include calc;
+	@include calc(100%, 340px);
 }
 
 .post-latest h2 {
@@ -579,7 +579,7 @@ News
 footer
 ==================*/
 .footer-wrapper {
-	@include calc;
+	@include calc(100%, 340px);
 	// display: flex;
 	// justify-content: space-between;
 	background: darken($dark-gray, 15%);
@@ -850,10 +850,7 @@ table-box
 		}
 	}
 }
-// .table-body .loss {
-//   background-color: #ab372b;
-//   border-bottom: 2px solid #912f24;
-// }
+
 .mob-data-number {
 	display: none;
 }
@@ -962,10 +959,6 @@ event
 			margin: 10px 0;
 			font-size: 1.2em;
 			color: lighten($dark-gray, 5%);
-			.referee {
-				// font-size: 1.2em;
-				// color: lighten($dark-gray, 5%);
-			}
 		}
 		.outcome {
 			font-weight: 900;
@@ -977,34 +970,9 @@ event
 		}
 }
 
-// .fightinfo-item+.fightinfo-item_content {
-// 	order: 1;
-// }
 /*=================
 adaptive
 ==================*/
-
-// @media screen and (max-width: 1130px) and (min-width: 320px) {
-	// .news-post, .social-news-post, .post-latest-header, .footer-wrapper,
-	// .home-content-list, .home-widgets, .story, .table-box {
- //    width: 100%;
-	// }
-	// .container {
-	// 	padding: 0;
- //    margin: 0;
- //    max-width: 100%;
-	// }
-	// .story {
-	// 	margin-top: 52px;
-	// }
-	// .list-box {
-	// 	display: none;
-	// }
-	// .foot-widget-pic {
-	// 	margin: 20px 0;
-	// }
-// }
-// @media screen and (max-width: 1024px) and (min-width: 320px) { 
 	@include screen(320px, 1024px) {
 	.news-post, .social-news-post, .post-latest-header, .footer-wrapper,
 	.home-content-list, .home-widgets, .story, .table-box {
@@ -1015,9 +983,6 @@ adaptive
     margin: 0;
     max-width: 100%;
 	}
-	// .story {
-	// 	margin-top: 52px;
-	// }
 	.list-box {
 		display: none;
 	}
@@ -1087,23 +1052,6 @@ adaptive
 	p.mob-table-title {
 		margin: 10px 0;
 	}
-	// .mob-order-1 {
-	// 	text-align: center;
-	// 		.table-body_link {
-	// 			width: 100%;
-	// 		}
-	// }
-	// .desc-order {
-	// 	display: none;
-	// }
-	// .mob-order {
-	// 	display: flex;
-	// 	text-align: center;
-	// }
-
-	// .mob-name-fight {
-	// 	display: none;
-	// }
 	.mob-data-number {
 		display: inline-block;
 		font-weight: 700;
