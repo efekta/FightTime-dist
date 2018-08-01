@@ -200,7 +200,7 @@ main
 story section
 ==================*/
 .story {
-	@include calc(100%, 340px);
+	@include calc(width, '100% - 340px');
 	margin-top: 75px;
 }
 .story_main_wrapp {

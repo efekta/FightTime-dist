@@ -4,36 +4,46 @@
   flex-direction: column;
 }
 
-@mixin calc ($x:100%, $y:0px) {
-	width: calc($x - $y);
-	width: -moz-calc($x - $y);
-  width: -webkit-calc($x - $y);
+// @mixin calc ($x:100%, $y:0px) {
+// 	width: calc($x - $y);
+// 	width: -moz-calc($x - $y);
+//   width: -webkit-calc($x - $y);
+// }
+@mixin calc ($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
 }
+// @mixin img {
+// 	height: 100%;
+// 	min-width: 300px;
+//   width: auto;
+// 	position: absolute;
+//   left: -9999px;
+//   right: -9999px;
+//   margin: auto;
+// }
 
-@mixin img {
-	height: 100%;
-	min-width: 300px;
-  width: auto;
-	position: absolute;
-  left: -9999px;
-  right: -9999px;
-  margin: auto;
-}
-
-@mixin make-container() {
-  width: 100%;
-  padding-right: $grid-gutter-width;
-  padding-left: $grid-gutter-width;
-  margin-right: auto;
-  margin-left: auto;
-}
-@mixin make-container() {
-  width: 100%;
-  padding-right: 0;
-  padding-left: 0;
-  margin-right: auto;
-  margin-left: auto;
-}
+// @mixin make-container() {
+//   width: 100%;
+//   padding-right: $grid-gutter-width;
+//   padding-left: $grid-gutter-width;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
+// @mixin make-container() {
+//   width: 100%;
+//   padding-right: 0;
+//   padding-left: 0;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
 
 // @include img;
 // @include calc;
+
+@mixin calc ($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
