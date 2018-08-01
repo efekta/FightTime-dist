@@ -4,10 +4,10 @@
   flex-direction: column;
 }
 
-@mixin calc {
-	width: calc(100% - 340px);
-	width: -moz-calc(100% - 340px);
-  width: -webkit-calc(100% - 340px);
+@mixin calc ($x:100%, $y:0px) {
+	width: calc($x - $y);
+	width: -moz-calc($x - $y);
+  width: -webkit-calc($x - $y);
 }
 
 @mixin img {
