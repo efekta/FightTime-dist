@@ -1,7 +1,7 @@
 // HEADER
 .head-wrap {
 	position: relative;
-	z-index: 999;
+	z-index: 9;
   width: 100%;
   min-height: 75px;
     .page-head {
@@ -12,9 +12,6 @@
     min-height: 75px;
     background: $white;
     box-shadow: 0 7px 10px -5px rgba(0,0,0,0.3);
-    @include screen(320px, 1024px) {
-      background-color: red;
-    }
   }
 }
 .page-head_fixed {
@@ -42,8 +39,8 @@
   position: relative;
   display: block;
   padding: 25px 15px 25px;
-  font-weight: bold;
-  font-size: 1.25em;
+  font-weight: 600;
+  font-size: 1.2em;
   text-transform: uppercase;
   color: $blue;
   transition: .6s;
@@ -224,7 +221,7 @@ svg icon
 nav mob-menu
 ==================*/
 #nav-icon4 {
-  width: 30px;
+  width: 23px;
   height: 23px;
   position: absolute;
   left: 2%;
@@ -235,41 +232,41 @@ nav mob-menu
     span {
       display: block;
       position: absolute;
-      height: 3px;
+      height: 4px;
       width: 100%;
       background: $blue;
       left: 0;
       transform: rotate(0deg);
       transition: .25s ease-in-out;
-        :nth-child(1) {
-          top: 0px;
-          transform-origin: left center;
-        }
+        // :nth-child(1) {
+          top: 2px;
+          // transform-origin: left center;
+        // }
     }
 }
 #nav-icon4 span:nth-child(2) {
   top: 10px;
-  transform-origin: left center;
+  // transform-origin: left center;
 }
 
 #nav-icon4 span:nth-child(3) {
-  top: 20px;
-  transform-origin: left center;
+  top: 18px;
+  // transform-origin: left center;
 }
-#nav-icon4.open span:nth-child(1) {
-  transform: rotate(45deg);
-  top: 17px;
-  left: 0;
-}
-#nav-icon4.open span:nth-child(2) {
-  width: 0%;
-  opacity: 0;
-}
-#nav-icon4.open span:nth-child(3) {
-  transform: rotate(-45deg);
-  top: 39px;
-  left: 0;
-}
+// #nav-icon4.open span:nth-child(1) {
+//   transform: rotate(45deg);
+//   top: 17px;
+//   left: 0;
+// }
+// #nav-icon4.open span:nth-child(2) {
+//   width: 0%;
+//   opacity: 0;
+// }
+// #nav-icon4.open span:nth-child(3) {
+//   transform: rotate(-45deg);
+//   top: 39px;
+//   left: 0;
+// }
 .menu-gamburger-close {
 	position: relative;
 	width: 40px;
@@ -348,7 +345,7 @@ adaptive
     left: -2000px;;
     height: 100%;
     width: 270px;
-    z-index: 9999;
+    z-index: 999;
     transition: all .8s;
     .menu__item {
       display: block;

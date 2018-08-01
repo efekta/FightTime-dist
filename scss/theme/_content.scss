@@ -215,16 +215,20 @@ story section
 		}
 }
 
-.story-btn {
+.page-load-status {
 	background: $light-blue;
 	padding: 10px 5px;
 	text-align: center;
-	width: 100%;
-		button {
+	cursor: pointer;
+	@include calc;
+		p {
 		width: 100%;
 		display: inline-block;
 		color: $white;
 		font-size: 1.2rem;
+	}
+	@include screen(320px, 1024px) {
+		width: 100%;
 	}
 }
 
@@ -456,7 +460,7 @@ a.feedback-footer__day-link {
 }
 .feedback__social-proof a:hover,
 .feedback-caption_first-link:hover,
-.feedback-caption-comments a:hoverб
+.feedback-caption-comments a:hover,
 a.feedback-footer__day-link:hover {
 	text-decoration: underline;
 }
@@ -576,11 +580,11 @@ footer
 ==================*/
 .footer-wrapper {
 	@include calc;
-	display: flex;
-	justify-content: space-between;
+	// display: flex;
+	// justify-content: space-between;
 	background: darken($dark-gray, 15%);
   padding: 60px 15px 60px;
-	flex-wrap: wrap;
+	// flex-wrap: wrap;
 }
 
 .footer-item {
@@ -829,7 +833,7 @@ table-box
 		}
 }
 .result-wrap {
-	width: 49%;
+	width: 45%;
 }
 .table-body .result {
 	color: $white;
@@ -851,15 +855,7 @@ table-box
 /*=================
 event
 ==================*/
-.table-events {
-	border-collapse: collapse;
-  border-spacing: 0;
-  border-bottom: 1px solid $bg-mob-nav-link;
-}
-#fb-events-item-table table thead tr {
-    color: #fff;
-    background: #1f4773;
-}
+
 .events {
 	&_date {
 		font-weight: 700;
@@ -881,6 +877,9 @@ event
 		}
 		&-table-head {
 			border: none;
+				@include screen(320px, 1024px) {
+					display: none;
+				}
 		}
 		&-table-head-col {
 			// text-align: left;
@@ -899,16 +898,30 @@ event
 				margin-bottom: 10px;
 				justify-content: flex-end;
     		text-align: right;
+    		@include screen(320px, 478px) {
+					width: 100%;
+					flex-wrap: wrap;
+				}
     		&_loss {
     			justify-content: flex-start;
     			text-align: left;
     		}
+		}
+		.fightinfo-pic {
+		@include screen(320px, 478px) {
+			width: 100%;
+			}
 		}
 		&-pic img {
 			width: auto;
 		}
 		&-item_content {
 			margin: 0 10px;
+			
+				@include screen(320px, 478px) {
+				margin: 0;
+				order: 2;
+			}
 		}
 		&-vs {
 			text-transform: uppercase;
@@ -917,6 +930,9 @@ event
 			display: flex;
 			align-items: center;
 			justify-content: center;
+				@include screen(320px, 1024px) {
+					display: none;
+				}
 		}
 		.table-body_link {
 			display: flex;
@@ -955,11 +971,14 @@ event
 		}
 }
 
+// .fightinfo-item+.fightinfo-item_content {
+// 	order: 1;
+// }
 /*=================
 adaptive
 ==================*/
 
-@media screen and (max-width: 1130px) and (min-width: 320px) {
+// @media screen and (max-width: 1130px) and (min-width: 320px) {
 	// .news-post, .social-news-post, .post-latest-header, .footer-wrapper,
 	// .home-content-list, .home-widgets, .story, .table-box {
  //    width: 100%;
@@ -978,7 +997,7 @@ adaptive
 	// .foot-widget-pic {
 	// 	margin: 20px 0;
 	// }
-}
+// }
 // @media screen and (max-width: 1024px) and (min-width: 320px) { 
 	@include screen(320px, 1024px) {
 	.news-post, .social-news-post, .post-latest-header, .footer-wrapper,
@@ -1007,6 +1026,9 @@ adaptive
   	margin-bottom: 10px;
 	}
 }
+
+
+
 @media screen and (max-width: 960px) and (min-width: 320px) {
 	.fighter-main-img {
 		text-align: center;
@@ -1080,13 +1102,7 @@ adaptive
 		display: inline-block;
 		font-weight: 700;
 	}
-	.result-wrap {
-		width: 45%;		
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
-	}
+
 	.mob-table-title {
 		font-weight: 700;
 			span {

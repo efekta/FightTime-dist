@@ -10,6 +10,18 @@ a.featured-item {
 .featured-item-pic {
   height: 400px;
   overflow: hidden;
+    .featured-xl {
+    display: block;
+       @include screen(320px, 478px) {
+          display: none;
+      }
+  }
+    .featured-m {
+      display: none;
+        @include screen(320px, 478px) {
+          display: block;
+      }
+    }
 }
 
 .featured-lid {
