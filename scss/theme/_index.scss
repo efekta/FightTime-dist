@@ -9,6 +9,9 @@ main
 .home-content-list {
 	display: flex;
 	flex-wrap: wrap;
+	@include screen(320px, 1130px) {
+		padding-left: 13px;
+	}
 }
 .home-content-item {
 	margin-bottom: 30px;
@@ -808,15 +811,15 @@ adaptive
  //    width: 100%;
 	// }
 
-	.list-box {
-		display: none;
-	}
-	.foot-widget-pic {
-		margin: 20px 0;
-	}
-	.home-content-list {
-		padding-left: 13px;
-	}
+	// .list-box {
+	// 	display: none;
+	// }
+	// .foot-widget-pic {
+	// 	margin: 20px 0;
+	// }
+	// .home-content-list {
+	// 	padding-left: 13px;
+	// }
 	.fighter-info, .bio, .stat {
   	margin: 0 20px;
   	margin-bottom: 10px;

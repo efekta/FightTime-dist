@@ -29,6 +29,9 @@ footer
 
 .foot-widget-pic {
 	margin-bottom: 15px;
+	@include screen(320px, 1130px) {
+		margin: 15px 0;
+	}
 		img {
 			width: auto;
 		}

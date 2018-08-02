@@ -105,6 +105,9 @@ list-box
 		.prev-prev-text {
 			left: 0;
 		}
+		.list-box__link {
+			opacity: 0;
+		}
 	}
 }
 
@@ -126,12 +129,12 @@ list-box
   padding: 15px;
   background: $blue;
 }
-.list-box-item:hover .prev-next-text {
-  right: 0;
-}
-.list-box-item:hover .prev-prev-text {
-	left: 0;
-}
-.list-box-item:hover .list-box__link {
-	opacity: 0;
-}
+// .list-box-item:hover .prev-next-text {
+//   right: 0;
+// }
+// .list-box-item:hover .prev-prev-text {
+// 	left: 0;
+// }
+// .list-box-item:hover .list-box__link {
+// 	opacity: 0;
+// }
