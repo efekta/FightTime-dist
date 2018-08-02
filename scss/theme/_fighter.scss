@@ -1,0 +1,237 @@
+/*=================
+page fighter
+==================*/
+.fighter-title {
+	margin-top: 0;
+		h1 {
+			font-size: 1.6em;
+			font-weight: 700;
+		}
+}
+
+.fighter-main-img {
+	margin-right: 22px;
+		img {
+			width: auto;
+		}
+}
+.fighter-info {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+		@include screen(320px, 1027px) {
+			margin: 0 20px;
+  		margin-bottom: 10px;
+		}
+}
+.birthday__title,
+.age__title {
+	font-weight: 700;
+}
+
+.location-address {
+	display: flex;
+		span {
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		&__title {
+			margin-right: 10px;
+			font-size: 1.2em;
+		}
+}
+
+.bio {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+		&__title {
+			font-weight: 700;
+		}
+		&__value {
+			font-weight: 700;
+			color: lighten($dark-gray, 10%);
+		}
+	@include screen(320px, 1027px) {
+		margin: 0 20px;
+  	margin-bottom: 10px;
+	}
+}
+/*=================
+stat
+==================*/
+.stat {
+	margin-bottom: 20px;
+	@include screen(320px, 1027px) {
+		margin: 0 20px;
+  	margin-bottom: 10px;
+	}
+}
+.stat-box {
+	display: flex;
+}
+.stat__wins {
+	// width: 50%;
+	color: $color-title;
+}
+.title {
+	color: $color-title;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: 700;
+	width: auto;
+	min-width: 110px;
+	text-align: right;
+	flex-shrink: 0;
+}
+.stat-sub_title {
+	color: lighten($dark-gray, 10%);
+}
+.stat-title {
+	color: darken($dark-gray, 15%);
+	font-size: 1em;
+	text-transform: none;
+}
+.count {
+	width: 35px;
+	margin: 0 10px 2px;
+	text-align: center;
+	background-color: $color-title;
+	font-weight: 900;
+	color: $white;
+	flex-shrink: 0;
+}
+
+.title, .count, .graph, .line, .percent {
+  line-height: 25px;
+  height: 25px;
+}
+.percent {
+	position: absolute;
+	top: 0;
+	right: -36px;
+	min-width: 33px;
+	margin-left: 10px;
+}
+.graph {
+  margin-right: 36px;
+}
+.line {
+	position: relative;
+	display: block;
+	background-color: $color-title;
+}
+.title__loss {
+	color: $color-title-loss;
+}
+.stat__loss {
+	// width: 50%;
+	color: $color-title-loss;
+}
+.stat-sub-box {
+	margin-top: 10px;
+}
+.stat-sub-box_black {
+	color: darken($dark-gray, 25%);
+}
+.count__loss_black {
+	background: darken($dark-gray, 25%);
+	color: $white;
+}
+.count__loss {
+	background: $color-title-loss;
+}
+.fighter-subtitle {
+	margin: 20px 0;
+	font-size: 1.3em;
+	font-weight: 700;
+	color: darken($dark-gray, 30%);
+}
+
+.stat-sub-box_block {
+	margin-left: -13px;
+}
+/*=================
+table-box
+==================*/
+.table-box {
+	@include calc(100%, 340px);
+	padding: 20px 2.93255131965%;
+}
+
+.table-head {
+	border-left: 1px solid $blue;
+	border-right: 1px solid $blue;
+		&_col {
+			color: $white;
+			font-size: 1.2em;
+			font-weight: 600;
+			font-family: $font-family-dop;
+			background-color: $blue;
+			padding: 10px 5px;
+			border-right: 1px solid $bg-mob-nav-link;
+			text-align: center;
+				&:last-child {
+					border-right: none;
+				}
+		}
+}
+.table-body {
+	&:nth-child(2n) {
+		background: #f5f5f5;
+	}
+	border-left: 1px solid $bg-mob-nav-link;
+		&_box {
+			display: flex;
+   		flex-direction: column;
+    	justify-content: center;
+			padding: 10px !important;
+			border-right: 1px solid $bg-mob-nav-link;
+			border-bottom: 1px solid $bg-mob-nav-link;
+			&:first-child {
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+			&:nth-child(2) {
+				justify-content: flex-start;
+			}
+			p {
+				margin: auto 0;
+			}
+		}
+		&_link {
+			min-height: 75px;	
+			width: 49%;
+			font-size: 1.2em;
+			font-weight: 600;
+			 span {
+			 	font-weight: normal;
+			 }
+		}
+}
+.result-wrap {
+	width: 45%;
+}
+.table-body {
+	.result {
+	color: $white;
+  background-color: #378834;
+  border-bottom: 2px solid #2c6e2a;
+  padding: 4px 7px;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+		  &.loss {
+		  background-color: #ab372b;
+		  border-bottom: 2px solid #912f24;
+		}
+	}
+}
+
+.mob-data-number {
+	display: none;
+}
