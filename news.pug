@@ -9,237 +9,21 @@ html(lang='ru')
 		link(rel='stylesheet', href='css/main.css')
 	body
 		// mob menu
-		nav.mob-menu.head-nav.head-nav-mob
-			button.menu-gamburger-close(type='button')
-				i.fal.fa-times-circle.icon-gamburger-close
-			ul.menu-list-mob
-				li.menu__item_form
-					form.search-form-menu(action='https://fighttime.ru/search-results.html?searchid=1933334', method='get', target='_self')
-						input(type='text', name='text', value='')
-				li.menu__item
-					a.menu__link(href='') Новости
-				li.menu__item
-					a.menu__link(href='') Видео
-				li.menu__item
-					a.menu__link(href='') Рейтинг ММА
-				li.menu__item
-					a.menu__link(href='') Форум
-				li.menu__item
-					a.menu__link(href='') О портале
-				li.menu__item
-					a.menu__link(href='https://www.facebook.com/FightTime.ru', target='_blank')
-						span Facebook
-				li.menu__item
-					a.menu__link(href='https://twitter.com/fighttimeru', target='_blank')
-						span Twitter
-				li.menu__item
-					a.menu__link(href='https://vk.com/fighttimeru', target='_blank')
-						span Вконтакте
-				li.menu__item
-					a.menu__link(href='https://ok.ru/group/51264289898695', target='_blank')
-						span Одноклассники
-				li.menu__item
-					a.menu__link(href='https://www.instagram.com/fighttimeru', target='_blank')
-						span Instagram
+		include modules/mob-menu.pug
 		// end mob menu
 		// wrapper-page
 		.wrapper-page
 			// header
-			.head-wrap
-				.container
-					header#nav-wrap.page-head
-						#nav-icon4.menu-gamburger
-							span
-							span
-							span
-						.box-logo
-							a.box-logo__link(href='')
-								.box-logo__link-pic
-									img.logo-big(src='img/icon/logo-small.png', alt='Логотип')
-									img.logo-small(src='img/icon/logo-mobile.png', alt='Логотип')
-						// head-nav
-						nav.head-nav.head-nav-mob
-							// <button class="close"></button>
-							ul.menu
-								li.menu__item
-									a.menu__link(href='') Новости
-								li.menu__item
-									a.menu__link(href='') Видео
-								li.menu__item
-									a.menu__link(href='') Рейтинг ММА
-								li.menu__item
-									a.menu__link(href='') Форум
-								li.menu__item
-									a.menu__link(href='') О портале
-						// social
-						.social-nav
-							.social
-								ul.social__list
-									li.social__item
-										i.fab.fa-vk
-									li.social__item
-										i.fab.fa-twitter
-									li.social__item
-										i.far.fa-plus
-								// social-dropdown
-								.social-dropdown
-									ul.social-drop-list
-										li.social-drop-list__item
-											a.social-drop-list__link(href='https://www.facebook.com/FightTime.ru')
-												i.fab.fa-facebook-f
-												span Facebook
-										li.social-drop-list__item
-											a.social-drop-list__link(href='https://twitter.com/fighttimeru')
-												i.fab.fa-twitter
-												span Twitter
-										li.social-drop-list__item
-											a.social-drop-list__link(href='https://vk.com/fighttimeru')
-												i.fab.fa-vk
-												span Вконтакте
-										li.social-drop-list__item
-											a.social-drop-list__link(href='https://ok.ru/group/51264289898695')
-												i.fab.fa-odnoklassniki
-												span Одноклассники
-										li.social-drop-list__item
-											a.social-drop-list__link(href='https://www.instagram.com/fighttimeru')
-												i.fab.fa-instagram
-												span Instagram
-										li.social-drop-list__item
-											a.social-drop-list__link(href='/rssfeed.feed?type=rss')
-												i.far.fa-rss
-												span Rss
-							button.search-btn(type='button')
-								i.far.fa-search
-						// search-bar
-						.search-bar
-							form.search-bar-form(action='#')
-								input(type='search', placeholder='Введите запрос для поиска')
-								span.search-bar-form-close
-									i.far.fa-times
+			include modules/header.pug
 			// end header
 			// main
 			.container
 				.main
 					// sidebar tab
-					#sidebar.sidebar-wrap
-						button.fe-mobi-bt(type='button') Открыть
-						.sidebar-container
-							.sidebar
-								.tabs
-									span.tab
-										i.far.fa-calendar-alt
-										| 								Календарь
-									span.tab
-										i.far.fa-chart-line
-										| 								Бойцы
-								.tab_content
-									.tab_items
-										a.sidebar-item(href='')
-											.tab-num
-												span.tab-num_month Апр
-												span.tab-num_day 20
-												span.tab-num_year 2018
-											p.tab-content_desc One Championship Heroes of Honor
-										a.sidebar-item(href='')
-											.tab-num
-												span.tab-num_month Апр
-												span.tab-num_day 21
-												span.tab-num_year 2018
-											p.tab-content_desc UFC Fight Night 128 Barboza vs. Lee
-										a.sidebar-item(href='')
-											.tab-num
-												span.tab-num_month Апр
-												span.tab-num_day 21
-												span.tab-num_year 2018
-											p.tab-content_desc ACB 85 Leone vs. Ginazov
-										a.sidebar-item(href='')
-											.tab-num
-												span.tab-num_month Апр
-												span.tab-num_day 28
-												span.tab-num_year 2018
-											p.tab-content_desc Bellator 198 Fedor vs. Mir
-										a.sidebar-item(href='')
-											.tab-num
-												span.tab-num_month Май
-												span.tab-num_day 4
-												span.tab-num_year 2018
-											p.tab-content_desc WFCA 48 Baku Battle
-										a.sidebar-item(href='')
-											.tab-num
-												span.tab-num_month Май
-												span.tab-num_day 5
-												span.tab-num_year 2018
-											p.tab-content_desc FNG Fight Nights Global 87
-										a.sidebar-item(href='')
-											.tab-num
-												span.tab-num_month Май
-												span.tab-num_day 5
-												span.tab-num_year 2018
-											p.tab-content_desc ACB 86 Balaev vs. Raisov 2
-										a.sidebar-item(href='')
-											.tab-num
-												span.tab-num_month Май
-												span.tab-num_day 6
-												span.tab-num_year 2018
-											p.tab-content_desc Rizin FF Rizin 10
-										a.sidebar-item(href='')
-											.tab-num
-												span.tab-num_month Май
-												span.tab-num_day 12
-												span.tab-num_year 2018
-											p.tab-content_desc One Championship Grit & Glory
-										a.sidebar-item(href='')
-											.tab-num
-												span.tab-num_month Май
-												span.tab-num_day 6
-												span.tab-num_year 2018
-											p.tab-content_desc UFC 224 Nunes vs. Pennington
-										a.sidebar-item(href='')
-											.tab-num
-												span.tab-num_month Май
-												span.tab-num_day 12
-												span.tab-num_year 2018
-											p.tab-content_desc One Championship Grit & Glory
-										a.sidebar-item(href='')
-											.tab-num
-												span.tab-num_month Май
-												span.tab-num_day 12
-												span.tab-num_year 2018
-											p.tab-content_desc M-1 Challenge 91 Doskalchuk vs. Ashimov
-									.tab_items
-										.fe-search-box
-											form.fe-search(action='#')
-												input#search_fighters.form-control.searchfeeld.query_fighters(name='namesearch', type='text', placeholder='Введите имя бойца', value='')
-												.br-box
-													button.btn.br-box__link(type='button')
-														i.far.fa-search
-										a.sidebar-item(href='')
-											.item-box-pic
-												img(src='img/sidebar/29688.jpg', alt='')
-											.item-box-title
-												p.name_rus Конор МакГрегор
-												p.name_eng (Conor McGregor)
-										a.sidebar-item(href='')
-											.item-box-pic
-												img(src='img/sidebar/5635.jpg', alt='')
-											.item-box-title
-												p.name_rus Хабиб Нурмагомедов
-												p.name_eng (Khabib Nurmagomedov)
-										a.sidebar-item(href='')
-											.item-box-pic
-												img(src='img/sidebar/31239.jpg', alt='')
-											.item-box-title
-												p.name_rus Тони Фергюсон
-												p.name_eng (Tony Ferguson)
-										a.sidebar-item(href='')
-											.item-box-pic
-												img(src='img/sidebar/27944.jpg', alt='')
-											.item-box-title
-												p.name_rus Джон Джонс
-												p.name_eng (Jon Jones)
+					include modules/sidebar.pug
 					// end sidebar tab
 					// story-section
-					.story.infinite-content
+					.base-content.story.infinite-content
 						.row.no-gutters.row-post
 							.col-xs-12.col-sm-6
 								article.post.home-featured-sub-main
@@ -426,7 +210,7 @@ html(lang='ru')
 													a.read-share-overlay-social__link.read-share-overlay-social__link-sub.read-share-comments(href='')
 														i.fas.fa-comments
 					// end story-section
-				.page-load-status
+				.base-content.page-load-status
 					p.infinite-scroll-request Loading...
 					p.infinite-scroll-last End of content
 					p.infinite-scroll-error No more pages to load

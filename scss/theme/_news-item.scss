@@ -1,0 +1,137 @@
+/*=================
+news
+==================*/
+.news-item {
+	display: inline-block;
+	vertical-align: middle;
+	color: lighten($dark-gray, 35%);
+	font-size: .9em;
+}
+
+.news-date {
+	text-transform: uppercase;
+}
+.news-post {
+	padding: 20px 2.93255131965%;
+}
+.news-post-cat-date {
+	display: inline-block;
+	margin-right: 10px;
+		&-contain span {
+			color: $dark-gray;
+			font-size: .9em;
+			font-weight: 700;
+		}
+}
+
+.news-post_month, .news-post_day, .news-post_year {
+	text-transform: uppercase;
+}
+.news-post_author_box {
+	display: inline-block;
+		span {
+			margin-right: 5px;
+		}
+}
+
+span.news-post_author-name {
+	text-transform: uppercase;
+	color: darken($dark-gray, 30%);
+}
+.news-post-title {
+	margin: 20px 0;
+		h1 {
+			font-size: 2em;
+  		font-weight: 700;
+  		color: darken($dark-gray, 35%);
+		}
+}
+
+.news-post-container, .news-post-container_desc {
+	margin: 20px 0;
+}
+
+.news-post-container p {
+	font-size: 1.2em;
+	color: $dark-gray;
+}
+.news-post-container_desc {
+	padding: 0 40px;
+		blockquote p {
+			font-size: 1.2em;
+			font-weight: 700;
+		}
+}
+/*==============
+list-box
+==============*/
+.list-box {
+	@include screen(320px, 1130px) {
+		display: none;
+	}
+	&-item_right {
+		margin-top: -40px;
+	  position: fixed;
+	  top: 50%;
+	  z-index: 999;
+		right: 0;
+	}
+	&-item_left {
+		margin-top: -40px;
+	  position: fixed;
+	  top: 50%;
+	  z-index: 999;
+		left: 0;
+	}
+	&__link {
+		font-size: 4em;
+		padding: 0 20px;
+		.svg-inline--fa {
+			color: darken($dark-gray, 25%);
+		}
+	}
+	&-item .prev-next-text {
+	  right: -9999px;
+	  text-align: left;
+	}
+	&-item .prev-prev-text {
+  	left: -9999px;
+  	text-align: left;
+	}
+	&-item:hover {
+		.prev-next-text {
+		  right: 0;
+		}
+		.prev-prev-text {
+			left: 0;
+		}
+	}
+}
+
+
+.list-content {
+	position: absolute;
+	top: 10px;
+	width: 280px;
+	display: flex;
+	transition: all .3s;
+}
+
+.prev-next-text a, .prev-next-text a:visited, .prev-next-text a:hover,
+.prev-prev-text a, .prev-prev-text a:visited, .prev-prev-text a:hover {
+  color: $white;
+  font-size: .95em;
+  font-weight: 500;
+  line-height: 130%;
+  padding: 15px;
+  background: $blue;
+}
+.list-box-item:hover .prev-next-text {
+  right: 0;
+}
+.list-box-item:hover .prev-prev-text {
+	left: 0;
+}
+.list-box-item:hover .list-box__link {
+	opacity: 0;
+}

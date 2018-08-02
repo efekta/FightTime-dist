@@ -112,3 +112,17 @@ body.overlay {
     z-index: 100;
 		transition: all 300ms ease;
 }
+.container {
+	@include screen(320px, 1130px) {
+		padding: 0;
+		margin: 0;
+		max-width: 100%;
+	}
+}
+.base-content {
+	@include calc(width, '100% - 340px');
+	padding: 20px 2.93255131965%;
+	// @include screen(320px, 1130px) {
+	// 	width: 100%;
+	// }
+}

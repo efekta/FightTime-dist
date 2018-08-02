@@ -37,6 +37,7 @@
       <div class="head-wrap">
         <div class="container">
           <header class="page-head" id="nav-wrap">
+            <!-- <div class="container">-->
             <div class="menu-gamburger" id="nav-icon4"><span></span><span></span><span></span></div>
             <div class="box-logo"><a class="box-logo__link" href="">
                 <div class="box-logo__link-pic"><img class="logo-big" src="img/icon/logo-small.png" alt="Логотип"><img class="logo-small" src="img/icon/logo-mobile.png" alt="Логотип"></div></a></div>
@@ -57,27 +58,74 @@
                 <ul class="social__list">
                   <li class="social__item"><i class="fab fa-vk"></i></li>
                   <li class="social__item"><i class="fab fa-twitter"></i></li>
-                  <li class="social__item"><i class="far fa-plus"></i></li>
+                  <li class="social__item"><i class="fas fa-plus"></i></li>
                 </ul>
                 <!-- social-dropdown-->
                 <div class="social-dropdown">
                   <ul class="social-drop-list">
-                    <li class="social-drop-list__item"><a class="social-drop-list__link" href="https://www.facebook.com/FightTime.ru"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+                    <li class="social-drop-list__item"><a class="social-drop-list__link" href="https://www.facebook.com/FightTime.ru">
+                        <svg class="svg-inline--fa fa-facebook-f fa-w-9" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 264 512">
+                          <path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path>
+                        </svg><span>Facebook</span></a></li>
                     <li class="social-drop-list__item"><a class="social-drop-list__link" href="https://twitter.com/fighttimeru"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
                     <li class="social-drop-list__item"><a class="social-drop-list__link" href="https://vk.com/fighttimeru"><i class="fab fa-vk"></i><span>Вконтакте</span></a></li>
                     <li class="social-drop-list__item"><a class="social-drop-list__link" href="https://ok.ru/group/51264289898695"><i class="fab fa-odnoklassniki"></i><span>Одноклассники</span></a></li>
                     <li class="social-drop-list__item"><a class="social-drop-list__link" href="https://www.instagram.com/fighttimeru"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
-                    <li class="social-drop-list__item"><a class="social-drop-list__link" href="/rssfeed.feed?type=rss"><i class="far fa-rss"></i><span>Rss</span></a></li>
+                    <li class="social-drop-list__item"><a class="social-drop-list__link" href="/rssfeed.feed?type=rss"><i class="fas fa-rss"></i><span>Rss</span></a></li>
                   </ul>
                 </div>
               </div>
-              <button class="search-btn" type="button"><i class="far fa-search"></i></button>
+              <button class="search-btn" type="button"><i class="fas fa-search"></i></button>
             </div>
             <!-- search-bar-->
-            <div class="search-bar">
-              <form class="search-bar-form" action="#">
-                <input type="search" placeholder="Введите запрос для поиска"><span class="search-bar-form-close"><i class="far fa-times"></i></span>
-              </form>
+            <div class="search-bar" id="search-bar">
+              <div class="ya-site-form ya-site-form_inited_yes" id="ya-site-form1">
+                <div class="ya-site-form__form">
+                  <table class="ya-site-form__wrap" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="ya-site-form__search-wrap">
+                          <table class="ya-site-form__search" cellpadding="0" cellspacing="0">
+                            <tbody>
+                              <tr>
+                                <td class="ya-site-form__search-input">
+                                  <table class="ya-site-form__search-input-layout">
+                                    <tbody>
+                                      <tr>
+                                        <td class="ya-site-form__search-input-layout-l">
+                                          <div class="ya-site-form__input">
+                                            <input class="ya-site-form__input-text" name="text" type="search" value="" placeholder="введите запрос для поиска" autocomplete="off">
+                                            <div class="ya-site-suggest">
+                                              <div class="ya-site-suggest-popup" style="display: none;"><i class="ya-site-suggest__opera-gap"></i>
+                                                <div class="ya-site-suggest-list">
+                                                  <div class="ya-site-suggest__iframe"></div>
+                                                  <ul class="ya-site-suggest-items"></ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td class="ya-site-form__search-input-layout-r">
+                                          <input class="ya-site-form__submit" type="button" value="Найти">
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="ya-site-form__gap">
+                                  <div class="ya-site-form__gap-i"></div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </header>
         </div>
@@ -91,7 +139,7 @@
             <button class="fe-mobi-bt" type="button">Открыть</button>
             <div class="sidebar-container">
               <div class="sidebar">
-                <div class="tabs"><span class="tab"><i class="far fa-calendar-alt"></i>								Календарь</span><span class="tab"><i class="far fa-chart-line"></i>								Бойцы</span></div>
+                <div class="tabs"><span class="tab"><i class="far fa-calendar-alt"></i>										Календарь</span><span class="tab"><i class="far fa-chart-line"></i>										Бойцы</span></div>
                 <div class="tab_content">
                   <div class="tab_items"><a class="sidebar-item" href="">
                       <div class="tab-num"><span class="tab-num_month">Апр</span><span class="tab-num_day">20</span><span class="tab-num_year">2018</span></div>
@@ -154,7 +202,7 @@
           </div>
           <!-- end sidebar tab-->
           <!-- story-section-->
-          <div class="story infinite-content">
+          <div class="base-content story infinite-content">
             <div class="row no-gutters row-post">
               <div class="col-xs-12 col-sm-6">
                 <article class="post home-featured-sub-main"><a class="featured-item featured-sub-item" href="#">
@@ -320,7 +368,7 @@
           </div>
           <!-- end story-section-->
         </div>
-        <div class="page-load-status">
+        <div class="base-content page-load-status">
           <p class="infinite-scroll-request">Loading...</p>
           <p class="infinite-scroll-last">End of content</p>
           <p class="infinite-scroll-error">No more pages to load</p>
@@ -334,7 +382,7 @@
     <!-- end wrapper-page-->
     <!-- footer-wrapper-->
     <div class="container">
-      <div class="row no-gutters footer-wrapper">
+      <div class="base-content row no-gutters footer-wrapper">
         <div class="col-xs-12 col-sm-6">
           <ul class="footer-list">
             <li class="footer-item"><a class="footer-link" href="">Конор МакГрегор</a></li>

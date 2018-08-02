@@ -1,0 +1,251 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Конор МакГрегор / Conor McGregor (Ноториус)
+    link(rel='stylesheet', href='css/main.css')
+  body
+    // mob menu
+    include modules/mob-menu.pug
+    // end mob menu
+    // wrapper-page
+    .wrapper-page
+      // header
+      include modules/header.pug
+      // end header
+      // main
+      .container
+        .main.main-page-fighter
+          // news-post
+          .news-post
+            .news-post-title.fighter-title
+              h1 Конор МакГрегор / Conor McGregor (Ноториус)
+            .row.no-gutters
+              .col-md-4.col-xs-12
+                .fighter-main-img
+                  img(src='img/content/29688.jpg', alt='')
+              .col-md-8.col-xs-12
+                .row.no-gutters
+                  .col-12
+                    .fighter-info
+                      .birthday-age
+                        .birthday
+                          span.birthday__title Дата рождения:
+                          span 1988-07-14
+                        .age
+                          span.age__title Возраст:
+                          span.age__desc 29
+                      .location-address
+                        span.location-address__title Ирландия
+                        .location-address__pic
+                          img(src='img/icon/51.png', alt='')
+                  .col-12
+                    .bio
+                      .bio__weight
+                        p.bio__title Вес
+                        p.bio__value 70.31 кг
+                        p 155 lbs
+                      .bio__heght
+                        p.bio__title Рост
+                        p.bio__value 172.72 см
+                        p 5'8"
+                      .bio__wclass
+                        p.bio__title Весовая категория
+                        p.bio__value Легкая
+                        p Lightweight
+                  .col-12
+                    .stat
+                      .row.no-gutters
+                        .col-md-6
+                          .stat__wins
+                            .stat-box
+                              span.title Победы
+                              span.count 21
+                            .stat-box
+                              span.title.stat-title KO/TKO
+                              span.count 18
+                              span.graph(style='width:100%;')
+                                span.line(style='width:86%;')
+                                  span.percent 86%
+                            .stat-box
+                              span.title.stat-title Решением
+                              span.count 2
+                              span.graph(style='width:100%;')
+                                span.line(style='width:10%;')
+                                  span.percent 10%
+                            .stat-box
+                              span.title.stat-title Сабмишном
+                              span.count 1
+                              span.graph(style='width:100%;')
+                                span.line(style='width:5%;')
+                                  span.percent 5%
+                            .stat-box
+                              span.title.stat-title Остальные
+                              span.count 0
+                              span.graph
+                                span.line(style='width:0%;')
+                                  span.percent 0%
+                            .stat-box.stat-sub-box
+                              span.title.stat-sub_title Ничьи
+                              span.count 0
+                        .col-md-6
+                          .stat__loss
+                            .stat-box
+                              span.title.title__loss ПОРАЖЕНИЯ
+                              span.count.count__loss 3
+                            .stat-box
+                              span.title.stat-title KO/TKO
+                              span.count.count__loss 0
+                              span.graph
+                                span.line(style='width:0;')
+                                  span.percent 0%
+                            .stat-box
+                              span.title.stat-title Решением
+                              span.count.count__loss 0
+                              span.graph
+                                span.line(style='width:0;')
+                                  span.percent 0%
+                            .stat-box
+                              span.title.stat-title Сабмишном
+                              span.count.count__loss 3
+                              span.graph(style='width:100%;')
+                                span.line.count__loss(style='width:100%;')
+                                  span.percent 100%
+                            .stat-box
+                              span.title.stat-title Остальные
+                              span.count.count__loss 0
+                              span.graph
+                                span.line(style='width:0%;')
+                                  span.percent 0%
+                            .stat-box.stat-sub-box.stat-sub-box_block
+                              span.title.stat-sub_title.stat-sub-box_black Без результата
+                              span.count.count__loss_black 0
+          // end new post
+          // sidebar tab
+          include modules/sidebar.pug
+          // end sidebar tab
+          // table
+          #fb-fighter.table-box
+            h2.fighter-subtitle История профессиональных боев
+            .table-head
+              .row.no-gutters
+                .col-2.table-head_col
+                  span Результат
+                .col-2.table-head_col
+                  span Соперник
+                .col-5.table-head_col
+                  span Событие / Судья
+                .col.table-head_col
+                  span Р
+                .col-2.table-head_col
+                  span Время
+            .row.no-gutters.table-body
+              .col-sm-12.col-md-4.table-body_box.mob-order-2
+                .result-wrap
+                  span.result Выиграл
+                a.table-body_link(href='#')
+                  p Эдди Альварес
+                  span (Eddie Alvarez)
+                p.mob-table-title
+                  | Техническим нокаутом	
+                  span (удары)
+              .col-sm-12.col-md-5.table-body_box.mob-order-1
+                a.table-body_link(href='#') UFC 205 Alvarez vs. McGregor 
+                p
+                  span.mob-data-number Дата:
+                  | 							12 Нояб 2016 
+                  span.mob-name-fight / Джон МакКарти
+              .col.table-body_box.text-center.mob-order-num.mob-order-num2
+                span
+                  span.mob-data-number Р:
+                  | 							2
+              .col-sm-12.col-md-2.table-body_box.text-center.mob-order-num
+                span
+                  span.mob-data-number Время:
+                  | 							3:04
+            .row.no-gutters.table-body
+              .col-sm-12.col-md-4.table-body_box.mob-order-2
+                .result-wrap
+                  span.result.loss Проиграл
+                a.table-body_link(href='#')
+                  p Эдди Альварес
+                  span (Eddie Alvarez)
+                p.mob-table-title
+                  | Техническим нокаутом	
+                  span (удары)
+              .col-sm-12.col-md-5.table-body_box.mob-order-1
+                a.table-body_link(href='#') UFC 205 Alvarez vs. McGregor 
+                p
+                  span.mob-data-number Дата:
+                  | 							12 Нояб 2016 
+                  span.mob-name-fight / Джон МакКарти
+              .col.table-body_box.text-center.mob-order-num.mob-order-num2
+                span
+                  span.mob-data-number Р:
+                  | 							2
+              .col-sm-12.col-md-2.table-body_box.text-center.mob-order-num
+                span
+                  span.mob-data-number Время:
+                  | 							3:04
+            .row.no-gutters.table-body
+              .col-sm-12.col-md-4.table-body_box.mob-order-2
+                .result-wrap
+                  span.result Выиграл
+                a.table-body_link(href='#')
+                  p Эдди Альварес
+                  span (Eddie Alvarez)
+                p.mob-table-title
+                  | Техническим нокаутом	
+                  span (удары)
+              .col-sm-12.col-md-5.table-body_box.mob-order-1
+                a.table-body_link(href='#') UFC 205 Alvarez vs. McGregor 
+                p
+                  span.mob-data-number Дата:
+                  | 							12 Нояб 2016 
+                  span.mob-name-fight / Джон МакКарти
+              .col.table-body_box.text-center.mob-order-num.mob-order-num2
+                span
+                  span.mob-data-number Р:
+                  | 							2
+              .col-sm-12.col-md-2.table-body_box.text-center.mob-order-num
+                span
+                  span.mob-data-number Время:
+                  | 							3:04
+            .row.no-gutters.table-body
+              .col-sm-12.col-md-4.table-body_box.mob-order-2
+                .result-wrap
+                  span.result.loss Проиграл
+                a.table-body_link(href='#')
+                  p Эдди Альварес
+                  span (Eddie Alvarez)
+                p.mob-table-title
+                  | Техническим нокаутом	
+                  span (удары)
+              .col-sm-12.col-md-5.table-body_box.mob-order-1
+                a.table-body_link(href='#') UFC 205 Alvarez vs. McGregor 
+                p
+                  span.mob-data-number Дата:
+                  | 							12 Нояб 2016 
+                  span.mob-name-fight / Джон МакКарти
+              .col.table-body_box.text-center.mob-order-num.mob-order-num2
+                span
+                  span.mob-data-number Р:
+                  | 							2
+              .col-sm-12.col-md-2.table-body_box.text-center.mob-order-num
+                span
+                  span.mob-data-number Время:
+                  | 							3:04
+          // end table
+        // end main
+      // end container main
+    // end wrapper-page
+    // footer-wrapper
+    include modules/footer.pug
+    // end footer-wrapper
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='libs/fontawesome-pro/fontawesome-all.js')
+    script(src='libs/nicescroll/jquery.nicescroll.min.js')
+    script(src='js/common.js')

@@ -1,591 +1,332 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="description" content="">
-  <meta name="author" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Event</title>
-	<link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-		<!-- mob menu -->
-		<nav class="mob-menu head-nav head-nav-mob">
-			<button type="button" class="menu-gamburger-close">
-				<i class="fal fa-times-circle icon-gamburger-close"></i>
-			</button>
-			<ul class="menu-list-mob">
-				<li class="menu__item_form">
-					<form class="search-form-menu" action="https://fighttime.ru/search-results.html?searchid=1933334" method="get" target="_self">
-						<input type="text" name="text" value="">
-					</form>
-				</li>
-				<li class="menu__item">
-					<a href="" class="menu__link">Новости</a>
-				</li>
-				<li class="menu__item">
-					<a href="" class="menu__link">Видео</a>
-				</li>
-				<li class="menu__item">
-					<a href="" class="menu__link">Рейтинг ММА</a>
-				</li>
-				<li class="menu__item">
-					<a href="" class="menu__link">Форум</a>
-				</li>
-				<li class="menu__item">
-					<a href="" class="menu__link">О портале</a>
-				</li>
-				<li class="menu__item">
-					<a href="https://www.facebook.com/FightTime.ru" target="_blank" class="menu__link">
-						<span>Facebook</span>
-					</a>
-				</li>
-				<li class="menu__item">
-					<a href="https://twitter.com/fighttimeru" target="_blank" class="menu__link">
-						<span>Twitter</span>
-					</a>
-				</li>
-				<li class="menu__item">
-					<a href="https://vk.com/fighttimeru" target="_blank" class="menu__link">
-						<span>Вконтакте</span>
-					</a>
-				</li>
-				<li class="menu__item">
-					<a href="https://ok.ru/group/51264289898695" target="_blank" class="menu__link">
-						<span>Одноклассники</span>
-					</a>
-				</li>
-				<li class="menu__item">
-					<a href="https://www.instagram.com/fighttimeru" target="_blank" class="menu__link">
-						<span>Instagram</span>
-					</a>
-				</li>
-			</ul>
-		</nav>
-		<!-- end mob menu -->
-
-	<!-- wrapper-page -->
-	<div class="wrapper-page">
-		<!-- header -->
-		<div class="head-wrap">
-			<div class="container">
-				<header class="page-head" id="nav-wrap">
-					<!-- <div class="container"> -->
-						<div id="nav-icon4" class="menu-gamburger">
-								<span></span>
-								<span></span>
-								<span></span>
-						</div>
-						<div class="box-logo">
-							<a href="" class="box-logo__link">
-								<div class="box-logo__link-pic">
-									<img src="img/icon/logo-small.png" alt="Логотип" class="logo-big">
-									<img src="img/icon/logo-mobile.png" alt="Логотип" class="logo-small">
-								</div>
-							</a>
-						</div>
-						<!-- head-nav -->
-						<nav class="head-nav head-nav-mob">
-							<!-- <button class="close"></button> -->
-							<ul class="menu">
-								<li class="menu__item">
-									<a href="" class="menu__link">Новости</a>
-								</li>
-								<li class="menu__item">
-									<a href="" class="menu__link">Видео</a>
-								</li>
-								<li class="menu__item">
-									<a href="" class="menu__link">Рейтинг ММА</a>
-								</li>
-								<li class="menu__item">
-									<a href="" class="menu__link">Форум</a>
-								</li>
-								<li class="menu__item">
-									<a href="" class="menu__link">О портале</a>
-								</li>
-							</ul>
-						</nav>
-						<!-- social -->
-						<div class="social-nav">
-							<div class="social">
-								<ul class="social__list">
-									<li class="social__item">
-										<svg class="svg-inline--fa fa-vk fa-w-18" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="vk" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path></svg>
-									</li>
-									<li class="social__item">
-										<svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
-									</li>
-									<li class="social__item">
-										<svg class="svg-inline--fa fa-plus fa-w-14" aria-hidden="true" data-fa-processed="" data-prefix="far" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M436 228H252V44c0-6.6-5.4-12-12-12h-32c-6.6 0-12 5.4-12 12v184H12c-6.6 0-12 5.4-12 12v32c0 6.6 5.4 12 12 12h184v184c0 6.6 5.4 12 12 12h32c6.6 0 12-5.4 12-12V284h184c6.6 0 12-5.4 12-12v-32c0-6.6-5.4-12-12-12z"></path></svg>
-									</li>
-								</ul>
-
-							<!-- social-dropdown -->
-							<div class="social-dropdown">
-								<ul class="social-drop-list">
-									<li class="social-drop-list__item">
-										<a href="https://www.facebook.com/FightTime.ru" class="social-drop-list__link">
-											<svg class="svg-inline--fa fa-facebook-f fa-w-9" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512"><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg>
-											<span>Facebook</span>
-										</a>
-									</li>
-
-									<li class="social-drop-list__item">
-										<a href="https://twitter.com/fighttimeru" class="social-drop-list__link">
-											<svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
-											<span>Twitter</span>
-										</a>
-									</li>
-
-									<li class="social-drop-list__item">
-										<a href="https://vk.com/fighttimeru" class="social-drop-list__link">
-											<svg class="svg-inline--fa fa-vk fa-w-18" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="vk" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path></svg>
-											<span>Вконтакте</span>
-										</a>
-									</li>
-
-									<li class="social-drop-list__item">
-										<a href="https://ok.ru/group/51264289898695" class="social-drop-list__link">
-											<svg class="svg-inline--fa fa-odnoklassniki fa-w-10" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="odnoklassniki" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M275.1 334c-27.4 17.4-65.1 24.3-90 26.9l20.9 20.6 76.3 76.3c27.9 28.6-17.5 73.3-45.7 45.7-19.1-19.4-47.1-47.4-76.3-76.6L84 503.4c-28.2 27.5-73.6-17.6-45.4-45.7 19.4-19.4 47.1-47.4 76.3-76.3l20.6-20.6c-24.6-2.6-62.9-9.1-90.6-26.9-32.6-21-46.9-33.3-34.3-59 7.4-14.6 27.7-26.9 54.6-5.7 0 0 36.3 28.9 94.9 28.9s94.9-28.9 94.9-28.9c26.9-21.1 47.1-8.9 54.6 5.7 12.4 25.7-1.9 38-34.5 59.1zM30.3 129.7C30.3 58 88.6 0 160 0s129.7 58 129.7 129.7c0 71.4-58.3 129.4-129.7 129.4s-129.7-58-129.7-129.4zm66 0c0 35.1 28.6 63.7 63.7 63.7s63.7-28.6 63.7-63.7c0-35.4-28.6-64-63.7-64s-63.7 28.6-63.7 64z"></path></svg>
-											<span>Одноклассники</span>
-										</a>
-									</li>
-
-									<li class="social-drop-list__item">
-										<a href="https://www.instagram.com/fighttimeru" class="social-drop-list__link">
-											<svg class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
-											<span>Instagram</span>
-										</a>
-									</li>
-
-									<li class="social-drop-list__item">
-										<a href="/rssfeed.feed?type=rss" class="social-drop-list__link">
-											<svg class="svg-inline--fa fa-rss fa-w-14" aria-hidden="true" data-fa-processed="" data-prefix="far" data-icon="rss" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M80 368c17.645 0 32 14.355 32 32s-14.355 32-32 32-32-14.355-32-32 14.355-32 32-32m0-48c-44.183 0-80 35.817-80 80s35.817 80 80 80 80-35.817 80-80-35.817-80-80-80zm367.996 147.615c-6.449-237.834-198.057-429.163-435.61-435.61C5.609 31.821 0 37.229 0 44.007v24.02c0 6.482 5.147 11.808 11.626 11.992 211.976 6.04 382.316 176.735 388.354 388.354.185 6.479 5.51 11.626 11.992 11.626h24.02c6.78.001 12.187-5.608 12.004-12.384zm-136.239-.05C305.401 305.01 174.966 174.599 12.435 168.243 5.643 167.977 0 173.444 0 180.242v24.024c0 6.431 5.072 11.705 11.497 11.98 136.768 5.847 246.411 115.511 252.258 252.258.275 6.425 5.549 11.497 11.98 11.497h24.024c6.797-.001 12.264-5.644 11.998-12.436z"></path></svg>
-											<span>Rss</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-							</div>
-								<button class="search-btn" type="button">
-									<svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="far" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"></path></svg>
-								</button>
-						</div>
-						<!-- search-bar -->
-						<div class="search-bar">
-							<form action="#" class="search-bar-form">
-								<input type="search" placeholder="Введите запрос для поиска">
-								<span class="search-bar-form-close"><svg class="svg-inline--fa fa-times fa-w-12" aria-hidden="true" data-fa-processed="" data-prefix="far" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M231.6 256l130.1-130.1c4.7-4.7 4.7-12.3 0-17l-22.6-22.6c-4.7-4.7-12.3-4.7-17 0L192 216.4 61.9 86.3c-4.7-4.7-12.3-4.7-17 0l-22.6 22.6c-4.7 4.7-4.7 12.3 0 17L152.4 256 22.3 386.1c-4.7 4.7-4.7 12.3 0 17l22.6 22.6c4.7 4.7 12.3 4.7 17 0L192 295.6l130.1 130.1c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17L231.6 256z"></path></svg>
-								</span>
-							</form>
-						</div>
-					<!-- </div> -->
-				</header>
-			</div>
-		</div>
-		<!-- end header -->
-
-		<!-- container -->
-		<div class="container">
-			<!-- main -->
-			<div class="main main-page-fighter">
-				<!-- news-post -->
-				<div class="news-post" id="fb-events">
-					<div class="news-post-title fighter-title">
-						<span class="fighter-title_date">27 Июль 2018</span>
-						<h1>Bellator 202 Budd vs. Nogueira</h1>
-					</div>
-					<div class="events">
-						<div class="events_date">
-							<span>13 Июль 2018</span>
-						</div>
-						<div class="events_place">
-							<img src="img/icon/4.gif" alt="">
-							<span>Соединенные Штаты, Оклахома, Такервилл, Отель-казино WinStar World</span>
-						</div>
-					</div>
-				</div>
-				<!-- end new post -->
-			
-				<!-- events table-box-->
-				<div class="table-box">
-					<div class="events-table-head">
-						<div class="row no-gutters">
-							<div class="col-1 table-head_col events-table-head-col">
-								<span>Бой</span>
-							</div>
-							<div class="col-7 table-head_col events-table-head-col">
-								<span>Бойцы</span>
-							</div>
-							<div class="col-2 text-center table-head_col events-table-head-col">
-								<span>Раунд</span>
-							</div>
-							<div class="col-2 text-center table-head_col events-table-head-col">
-								<span>Время</span>
-							</div>
-						</div>
-					</div>
-					<div class="row no-gutters table-body events-table-body">
-						<div class="col-1 fightinfo-vs">
-							<span>12</span>
-						</div>
-						<div class="col-lg-9 col-sm-12">
-							<div class="row fightinfo">
-								<div class="col-5">
-									<div class="fightinfo-item">
-										<div class="fightinfo-item_content">
-											<p>боев - <span>23</span></p>
-											<p>побед - <span>19</span></p>
-											<p>проигр. - <span>4</span></p>
-											<p>ничья - <span>0</span></p>
-										</div>
-										<a href="#" class="fightinfo-pic">
-											<img src="img/content/30297.jpg" alt="">
-										</a>
-									</div>
-									<a href="#" class="table-body_link">
-										<p>Майкл МакДональд</p>
-										<span>(Michael McDonald)</span>
-									</a>
-									<div class="result-wrap">
-										<span class="result">Выиграл</span>
-									</div>
-								</div>
-								<div class="col-1 fightinfo-vs">
-									<span>vs</span>
-								</div>
-								<div class="col-5">
-									<div class="fightinfo-item fightinfo-item_loss">
-										<a href="#" class="fightinfo-pic">
-											<img src="img/content/21767.jpg" alt="">
-										</a>
-										<div class="fightinfo-item_content">
-											<p>боев - <span>26</span></p>
-											<p>побед - <span>20</span></p>
-											<p>проигр. - <span>6</span></p>
-											<p>ничья - <span>0</span></p>
-										</div>
-									</div>
-									<a href="#" class="table-body_link table-body_link_loss">
-										<p>Эдуардо Дантас</p>
-										<span>(Eduardo Dantas)</span>
-									</a>
-									<div class="result-wrap result-wrap_loss">
-										<span class="result loss">Проиграл</span>
-									</div>
-								</div>
-								<div class="col-12 referee-outcome text-center">
-									<p class="outcome">Нокаутом <span class="method">(удары)</span></p>
-									<p class="referee">Судья: Джейкоб Монталво</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-1 fightinfo-vs">
-							<span>3</span>
-						</div>
-						<div class="col-1 fightinfo-vs">
-							<span>4:07</span>
-						</div>
-					</div>
-				</div>
-				<!-- end events table-box-->
-
-				<!-- sidebar tab-->
-				<div id="sidebar" class="sidebar-wrap">
-					<button type="button" class="fe-mobi-bt">Открыть</button>
-					<div class="sidebar-container">
-						<div class="sidebar">
-							<div class="tabs">
-								<span class="tab">
-									<i class="far fa-calendar-alt"></i>
-									Календарь
-								</span>
-								<span class="tab">
-									<i class="far fa-chart-line"></i>
-									Бойцы
-								</span>
-							</div>
-
-							<div class="tab_content">
-								<div class="tab_items">
-									<a href="" class="sidebar-item">
-										<div class="tab-num">
-											<span class="tab-num_month">Апр</span>
-											<span class="tab-num_day">20</span>
-											<span class="tab-num_year">2018</span>
-										</div>
-										<p class="tab-content_desc">One Championship Heroes of Honor</p>
-									</a>
-									<a href="" class="sidebar-item">
-										<div class="tab-num">
-											<span class="tab-num_month">Апр</span>
-											<span class="tab-num_day">21</span>
-											<span class="tab-num_year">2018</span>
-										</div>
-										<p class="tab-content_desc">UFC Fight Night 128 Barboza vs. Lee</p>
-									</a>
-									<a href="" class="sidebar-item">
-										<div class="tab-num">
-											<span class="tab-num_month">Апр</span>
-											<span class="tab-num_day">21</span>
-											<span class="tab-num_year">2018</span>
-										</div>
-										<p class="tab-content_desc">ACB 85 Leone vs. Ginazov</p>
-									</a>
-									<a href="" class="sidebar-item">
-										<div class="tab-num">
-											<span class="tab-num_month">Апр</span>
-											<span class="tab-num_day">28</span>
-											<span class="tab-num_year">2018</span>
-										</div>
-										<p class="tab-content_desc">Bellator 198 Fedor vs. Mir</p>
-
-									</a>
-									<a href="" class="sidebar-item">
-										<div class="tab-num">
-											<span class="tab-num_month">Май</span>
-											<span class="tab-num_day">4</span>
-											<span class="tab-num_year">2018</span>
-										</div>
-										<p class="tab-content_desc">WFCA 48 Baku Battle</p>
-									</a>
-									<a href="" class="sidebar-item">
-										<div class="tab-num">
-											<span class="tab-num_month">Май</span>
-											<span class="tab-num_day">5</span>
-											<span class="tab-num_year">2018</span>
-										</div>
-										<p class="tab-content_desc">FNG Fight Nights Global 87</p>
-									</a>
-									<a href="" class="sidebar-item">
-										<div class="tab-num">
-											<span class="tab-num_month">Май</span>
-											<span class="tab-num_day">5</span>
-											<span class="tab-num_year">2018</span>
-										</div>
-										<p class="tab-content_desc">ACB 86 Balaev vs. Raisov 2</p>
-									</a>
-									<a href="" class="sidebar-item">
-										<div class="tab-num">
-											<span class="tab-num_month">Май</span>
-											<span class="tab-num_day">6</span>
-											<span class="tab-num_year">2018</span>
-										</div>
-										<p class="tab-content_desc">Rizin FF Rizin 10</p>
-									</a>
-									<a href="" class="sidebar-item">
-										<div class="tab-num">
-											<span class="tab-num_month">Май</span>
-											<span class="tab-num_day">12</span>
-											<span class="tab-num_year">2018</span>
-										</div>
-										<p class="tab-content_desc">One Championship Grit & Glory</p>
-									</a>
-									<a href="" class="sidebar-item">
-										<div class="tab-num">
-											<span class="tab-num_month">Май</span>
-											<span class="tab-num_day">6</span>
-											<span class="tab-num_year">2018</span>
-										</div>
-										<p class="tab-content_desc">UFC 224 Nunes vs. Pennington</p>
-									</a>
-									<a href="" class="sidebar-item">
-										<div class="tab-num">
-											<span class="tab-num_month">Май</span>
-											<span class="tab-num_day">12</span>
-											<span class="tab-num_year">2018</span>
-										</div>
-										<p class="tab-content_desc">One Championship Grit & Glory</p>
-									</a>
-									<a href="" class="sidebar-item">
-										<div class="tab-num">
-											<span class="tab-num_month">Май</span>
-											<span class="tab-num_day">12</span>
-											<span class="tab-num_year">2018</span>
-										</div>
-										<p class="tab-content_desc">M-1 Challenge 91 Doskalchuk vs. Ashimov</p>
-									</a>
-								</div>
-
-								<div class="tab_items">
-									<div class="fe-search-box">
-										<form action="#" class="fe-search">
-											<input name="namesearch" type="text" placeholder="Введите имя бойца" class="form-control searchfeeld query_fighters" id="search_fighters" value="">
-
-											<div class="br-box">
-												<button type="button" class="btn br-box__link">
-													<i class="far fa-search"></i>
-												</button>
-											</div>
-										</form>
-									</div>
-
-									<a href="" class="sidebar-item">
-										<div class="item-box-pic">
-											<img src="img/sidebar/29688.jpg" alt="">
-										</div>
-										<div class="item-box-title">
-											<p class="name_rus">Конор МакГрегор</p>
-											<p class="name_eng">(Conor McGregor)</p>
-										</div>
-									</a>
-									<a href="" class="sidebar-item">
-										<div class="item-box-pic">
-											<img src="img/sidebar/5635.jpg" alt="">
-										</div>
-										<div class="item-box-title">
-											<p class="name_rus">Хабиб Нурмагомедов</p>
-											<p class="name_eng">(Khabib Nurmagomedov)</p>
-										</div>
-									</a>
-									<a href="" class="sidebar-item">
-										<div class="item-box-pic">
-											<img src="img/sidebar/31239.jpg" alt="">
-										</div>
-										<div class="item-box-title">
-											<p class="name_rus">Тони Фергюсон</p>
-											<p class="name_eng">(Tony Ferguson)</p>
-										</div>
-									</a>
-									<a href="" class="sidebar-item">
-										<div class="item-box-pic">
-											<img src="img/sidebar/27944.jpg" alt="">
-										</div>
-										<div class="item-box-title">
-											<p class="name_rus">Джон Джонс</p>
-											<p class="name_eng">(Jon Jones)</p>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end sidebar tab -->
-			</div>
-			<!-- end main -->
-		</div>
-		<!-- end container -->
-	</div>
-	<!-- end wrapper-page -->
-
-	<!-- footer-wrapper -->
-	<div class="container">
-		<div class="row no-gutters footer-wrapper">
-				<div class="col-xs-12 col-sm-6">
-					<ul class="footer-list">
-						<li class="footer-item">
-							<a href="" class="footer-link">Конор МакГрегор</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Хабиб Нурмагомедов</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Федор Емельяненко</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Александр Шлеменко</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Андрей Корешков</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Жозе Альдо</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Доминик Круз</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Деметриус Джонсон</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Вячеслав Василевский</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Йоанна Еджейчик</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Стипе Миочич</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Холли Холм</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Алистар Оверим</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Bellator</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Strikeforce</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">THE ULTIMATE FIGHTER</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">UFC</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Андерсон Сильва</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Витор Белфорт</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Дана Уайт</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Даниэль Кормье</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Джон Джонс</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Джуниор Дос Сантос</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Кейн Веласкес</a>
-							</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Крис Вайдмэн</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">ММА</a>
-						</li>
-						<li class="footer-item">
-							<a href="" class="footer-link">Ронда Роузи</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-6">
-					<div class="foot-widget">
-						<div class="foot-widget-pic">
-							<img src="img/icon/logo-foot.png" alt="Top News">
-						</div>
-						<div class="foot-widget-content">
-							<p>Средство массовой информации сетевое издание «FightTime» зарегистрировано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор).</p>
-						</div>
-						<div class="foot-widget-content">
-							<p>Свидетельство о регистрации средства массовой информации Эл № ФС77-72103 от 29.12.2017</p>
-						</div>
-						<div class="foot-widget-content">
-							<p>Авторское право © 2012 FightTime.Ru. Все права на материалы, размещенные на сайте, защищены в соответствии с российским и международным законодательством об авторском праве и смежных правах.</p>
-						</div>
-						<div class="foot-widget-content">
-							<p>При любом использовании материалов сайта активная ссылка на <a href="https://fighttime.ru/">FightTime.ru</a> обязательна.</p>
-						</div>
-					</div>
-				</div>
-		</div>
-	</div>
-	<!-- end footer-wrapper -->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-	
-</script>
-<script src="libs/fontawesome-pro/fontawesome-all.js"></script>
-<script src="libs/nicescroll/jquery.nicescroll.min.js"></script>
-<script src="libs/infinitescroll/infinite-scroll.pkgd.min.js"></script>
-<script src="js/common.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- mob menu-->
+    <nav class="mob-menu head-nav head-nav-mob">
+      <button class="menu-gamburger-close" type="button"><i class="fal fa-times-circle icon-gamburger-close"></i></button>
+      <ul class="menu-list-mob">
+        <li class="menu__item_form">
+          <form class="search-form-menu" action="https://fighttime.ru/search-results.html?searchid=1933334" method="get" target="_self">
+            <input type="text" name="text" value="">
+          </form>
+        </li>
+        <li class="menu__item"><a class="menu__link" href="">Новости</a></li>
+        <li class="menu__item"><a class="menu__link" href="">Видео</a></li>
+        <li class="menu__item"><a class="menu__link" href="">Рейтинг ММА</a></li>
+        <li class="menu__item"><a class="menu__link" href="">Форум</a></li>
+        <li class="menu__item"><a class="menu__link" href="">О портале</a></li>
+        <li class="menu__item"><a class="menu__link" href="https://www.facebook.com/FightTime.ru" target="_blank"><span>Facebook</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="https://twitter.com/fighttimeru" target="_blank"><span>Twitter</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="https://vk.com/fighttimeru" target="_blank"><span>Вконтакте</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="https://ok.ru/group/51264289898695" target="_blank"><span>Одноклассники</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="https://www.instagram.com/fighttimeru" target="_blank"><span>Instagram</span></a></li>
+      </ul>
+    </nav>
+    <!-- end mob menu-->
+    <!-- wrapper-page-->
+    <div class="wrapper-page">
+      <!-- header-->
+      <div class="head-wrap">
+        <div class="container">
+          <header class="page-head" id="nav-wrap">
+            <!-- <div class="container">-->
+            <div class="menu-gamburger" id="nav-icon4"><span></span><span></span><span></span></div>
+            <div class="box-logo"><a class="box-logo__link" href="">
+                <div class="box-logo__link-pic"><img class="logo-big" src="img/icon/logo-small.png" alt="Логотип"><img class="logo-small" src="img/icon/logo-mobile.png" alt="Логотип"></div></a></div>
+            <!-- head-nav-->
+            <nav class="head-nav head-nav-mob">
+              <!-- <button class="close"></button>-->
+              <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="">Новости</a></li>
+                <li class="menu__item"><a class="menu__link" href="">Видео</a></li>
+                <li class="menu__item"><a class="menu__link" href="">Рейтинг ММА</a></li>
+                <li class="menu__item"><a class="menu__link" href="">Форум</a></li>
+                <li class="menu__item"><a class="menu__link" href="">О портале</a></li>
+              </ul>
+            </nav>
+            <!-- social-->
+            <div class="social-nav">
+              <div class="social">
+                <ul class="social__list">
+                  <li class="social__item"><i class="fab fa-vk"></i></li>
+                  <li class="social__item"><i class="fab fa-twitter"></i></li>
+                  <li class="social__item"><i class="fas fa-plus"></i></li>
+                </ul>
+                <!-- social-dropdown-->
+                <div class="social-dropdown">
+                  <ul class="social-drop-list">
+                    <li class="social-drop-list__item"><a class="social-drop-list__link" href="https://www.facebook.com/FightTime.ru">
+                        <svg class="svg-inline--fa fa-facebook-f fa-w-9" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 264 512">
+                          <path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path>
+                        </svg><span>Facebook</span></a></li>
+                    <li class="social-drop-list__item"><a class="social-drop-list__link" href="https://twitter.com/fighttimeru"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+                    <li class="social-drop-list__item"><a class="social-drop-list__link" href="https://vk.com/fighttimeru"><i class="fab fa-vk"></i><span>Вконтакте</span></a></li>
+                    <li class="social-drop-list__item"><a class="social-drop-list__link" href="https://ok.ru/group/51264289898695"><i class="fab fa-odnoklassniki"></i><span>Одноклассники</span></a></li>
+                    <li class="social-drop-list__item"><a class="social-drop-list__link" href="https://www.instagram.com/fighttimeru"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+                    <li class="social-drop-list__item"><a class="social-drop-list__link" href="/rssfeed.feed?type=rss"><i class="fas fa-rss"></i><span>Rss</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <button class="search-btn" type="button"><i class="fas fa-search"></i></button>
+            </div>
+            <!-- search-bar-->
+            <div class="search-bar" id="search-bar">
+              <div class="ya-site-form ya-site-form_inited_yes" id="ya-site-form1">
+                <div class="ya-site-form__form">
+                  <table class="ya-site-form__wrap" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="ya-site-form__search-wrap">
+                          <table class="ya-site-form__search" cellpadding="0" cellspacing="0">
+                            <tbody>
+                              <tr>
+                                <td class="ya-site-form__search-input">
+                                  <table class="ya-site-form__search-input-layout">
+                                    <tbody>
+                                      <tr>
+                                        <td class="ya-site-form__search-input-layout-l">
+                                          <div class="ya-site-form__input">
+                                            <input class="ya-site-form__input-text" name="text" type="search" value="" placeholder="введите запрос для поиска" autocomplete="off">
+                                            <div class="ya-site-suggest">
+                                              <div class="ya-site-suggest-popup" style="display: none;"><i class="ya-site-suggest__opera-gap"></i>
+                                                <div class="ya-site-suggest-list">
+                                                  <div class="ya-site-suggest__iframe"></div>
+                                                  <ul class="ya-site-suggest-items"></ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </td>
+                                        <td class="ya-site-form__search-input-layout-r">
+                                          <input class="ya-site-form__submit" type="button" value="Найти">
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="ya-site-form__gap">
+                                  <div class="ya-site-form__gap-i"></div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+      </div>
+      <!-- end header-->
+      <!-- container-->
+      <div class="container">
+        <!-- main-->
+        <div class="main main-page-fighter">
+          <!-- news-post-->
+          <div class="news-post" id="fb-events">
+            <div class="news-post-title fighter-title"><span class="fighter-title_date">27 Июль 2018</span>
+              <h1>Bellator 202 Budd vs. Nogueira</h1>
+            </div>
+            <div class="events">
+              <div class="events_date"><span>13 Июль 2018</span></div>
+              <div class="events_place"><img src="img/icon/4.gif" alt=""><span>Соединенные Штаты, Оклахома, Такервилл, Отель-казино WinStar World</span></div>
+            </div>
+          </div>
+          <!-- end new post-->
+          <!-- events table-box-->
+          <div class="table-box">
+            <div class="events-table-head">
+              <div class="row no-gutters">
+                <div class="col-1 table-head_col events-table-head-col"><span>Бой</span></div>
+                <div class="col-7 table-head_col events-table-head-col"><span>Бойцы</span></div>
+                <div class="col-2 text-center table-head_col events-table-head-col"><span>Раунд</span></div>
+                <div class="col-2 text-center table-head_col events-table-head-col"><span>Время</span></div>
+              </div>
+            </div>
+            <div class="row no-gutters table-body events-table-body">
+              <div class="col-1 fightinfo-vs"><span>12</span></div>
+              <div class="col-lg-9 col-sm-12">
+                <div class="row fightinfo">
+                  <div class="col-5">
+                    <div class="fightinfo-item">
+                      <div class="fightinfo-item_content">
+                        <p>боев - <span>23</span></p>
+                        <p>побед - <span>19</span></p>
+                        <p>проигр. - <span>4</span></p>
+                        <p>ничья - <span>0</span></p>
+                      </div><a class="fightinfo-pic" href="#"><img src="img/content/30297.jpg" alt=""></a>
+                    </div><a class="table-body_link" href="#">
+                      <p>Майкл МакДональд</p><span>(Michael McDonald)</span></a>
+                    <div class="result-wrap"><span class="result">Выиграл</span></div>
+                  </div>
+                  <div class="col-1 fightinfo-vs"><span>vs</span></div>
+                  <div class="col-5">
+                    <div class="fightinfo-item fightinfo-item_loss"><a class="fightinfo-pic" href="#"><img src="img/content/21767.jpg" alt=""></a>
+                      <div class="fightinfo-item_content">
+                        <p>боев - <span>26</span></p>
+                        <p>побед - <span>20</span></p>
+                        <p>проигр. - <span>6</span></p>
+                        <p>ничья - <span>0</span></p>
+                      </div>
+                    </div><a class="table-body_link table-body_link_loss" href="#">
+                      <p>Эдуардо Дантас</p><span>(Eduardo Dantas)</span></a>
+                    <div class="result-wrap result-wrap_loss"><span class="result loss">Проиграл</span></div>
+                  </div>
+                  <div class="col-12 referee-outcome text-center">
+                    <p class="outcome">Нокаутом <span class="method">(удары)</span></p>
+                    <p class="referee">Судья: Джейкоб Монталво</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1 fightinfo-vs"><span>3</span></div>
+              <div class="col-1 fightinfo-vs"><span>4:07</span></div>
+            </div>
+          </div>
+          <!-- end events table-box-->
+          <!-- sidebar tab-->
+          <div class="sidebar-wrap" id="sidebar">
+            <button class="fe-mobi-bt" type="button">Открыть</button>
+            <div class="sidebar-container">
+              <div class="sidebar">
+                <div class="tabs"><span class="tab"><i class="far fa-calendar-alt"></i>										Календарь</span><span class="tab"><i class="far fa-chart-line"></i>										Бойцы</span></div>
+                <div class="tab_content">
+                  <div class="tab_items"><a class="sidebar-item" href="">
+                      <div class="tab-num"><span class="tab-num_month">Апр</span><span class="tab-num_day">20</span><span class="tab-num_year">2018</span></div>
+                      <p class="tab-content_desc">One Championship Heroes of Honor</p></a><a class="sidebar-item" href="">
+                      <div class="tab-num"><span class="tab-num_month">Апр</span><span class="tab-num_day">21</span><span class="tab-num_year">2018</span></div>
+                      <p class="tab-content_desc">UFC Fight Night 128 Barboza vs. Lee</p></a><a class="sidebar-item" href="">
+                      <div class="tab-num"><span class="tab-num_month">Апр</span><span class="tab-num_day">21</span><span class="tab-num_year">2018</span></div>
+                      <p class="tab-content_desc">ACB 85 Leone vs. Ginazov</p></a><a class="sidebar-item" href="">
+                      <div class="tab-num"><span class="tab-num_month">Апр</span><span class="tab-num_day">28</span><span class="tab-num_year">2018</span></div>
+                      <p class="tab-content_desc">Bellator 198 Fedor vs. Mir</p></a><a class="sidebar-item" href="">
+                      <div class="tab-num"><span class="tab-num_month">Май</span><span class="tab-num_day">4</span><span class="tab-num_year">2018</span></div>
+                      <p class="tab-content_desc">WFCA 48 Baku Battle</p></a><a class="sidebar-item" href="">
+                      <div class="tab-num"><span class="tab-num_month">Май</span><span class="tab-num_day">5</span><span class="tab-num_year">2018</span></div>
+                      <p class="tab-content_desc">FNG Fight Nights Global 87</p></a><a class="sidebar-item" href="">
+                      <div class="tab-num"><span class="tab-num_month">Май</span><span class="tab-num_day">5</span><span class="tab-num_year">2018</span></div>
+                      <p class="tab-content_desc">ACB 86 Balaev vs. Raisov 2</p></a><a class="sidebar-item" href="">
+                      <div class="tab-num"><span class="tab-num_month">Май</span><span class="tab-num_day">6</span><span class="tab-num_year">2018</span></div>
+                      <p class="tab-content_desc">Rizin FF Rizin 10</p></a><a class="sidebar-item" href="">
+                      <div class="tab-num"><span class="tab-num_month">Май</span><span class="tab-num_day">12</span><span class="tab-num_year">2018</span></div>
+                      <p class="tab-content_desc">One Championship Grit & Glory</p></a><a class="sidebar-item" href="">
+                      <div class="tab-num"><span class="tab-num_month">Май</span><span class="tab-num_day">6</span><span class="tab-num_year">2018</span></div>
+                      <p class="tab-content_desc">UFC 224 Nunes vs. Pennington</p></a><a class="sidebar-item" href="">
+                      <div class="tab-num"><span class="tab-num_month">Май</span><span class="tab-num_day">12</span><span class="tab-num_year">2018</span></div>
+                      <p class="tab-content_desc">One Championship Grit & Glory</p></a><a class="sidebar-item" href="">
+                      <div class="tab-num"><span class="tab-num_month">Май</span><span class="tab-num_day">12</span><span class="tab-num_year">2018</span></div>
+                      <p class="tab-content_desc">M-1 Challenge 91 Doskalchuk vs. Ashimov</p></a></div>
+                  <div class="tab_items">
+                    <div class="fe-search-box">
+                      <form class="fe-search" action="#">
+                        <input class="form-control searchfeeld query_fighters" id="search_fighters" name="namesearch" type="text" placeholder="Введите имя бойца" value="">
+                        <div class="br-box">
+                          <button class="btn br-box__link" type="button"><i class="far fa-search"></i></button>
+                        </div>
+                      </form>
+                    </div><a class="sidebar-item" href="">
+                      <div class="item-box-pic"><img src="img/sidebar/29688.jpg" alt=""></div>
+                      <div class="item-box-title">
+                        <p class="name_rus">Конор МакГрегор</p>
+                        <p class="name_eng">(Conor McGregor)</p>
+                      </div></a><a class="sidebar-item" href="">
+                      <div class="item-box-pic"><img src="img/sidebar/5635.jpg" alt=""></div>
+                      <div class="item-box-title">
+                        <p class="name_rus">Хабиб Нурмагомедов</p>
+                        <p class="name_eng">(Khabib Nurmagomedov)</p>
+                      </div></a><a class="sidebar-item" href="">
+                      <div class="item-box-pic"><img src="img/sidebar/31239.jpg" alt=""></div>
+                      <div class="item-box-title">
+                        <p class="name_rus">Тони Фергюсон</p>
+                        <p class="name_eng">(Tony Ferguson)</p>
+                      </div></a><a class="sidebar-item" href="">
+                      <div class="item-box-pic"><img src="img/sidebar/27944.jpg" alt=""></div>
+                      <div class="item-box-title">
+                        <p class="name_rus">Джон Джонс</p>
+                        <p class="name_eng">(Jon Jones)</p>
+                      </div></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end sidebar tab-->
+        </div>
+        <!-- end main-->
+      </div>
+      <!-- end container-->
+    </div>
+    <!-- end wrapper-page-->
+    <!-- footer-wrapper-->
+    <div class="container">
+      <div class="base-content row no-gutters footer-wrapper">
+        <div class="col-xs-12 col-sm-6">
+          <ul class="footer-list">
+            <li class="footer-item"><a class="footer-link" href="">Конор МакГрегор</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Хабиб Нурмагомедов</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Федор Емельяненко</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Александр Шлеменко</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Андрей Корешков</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Жозе Альдо</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Доминик Круз</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Деметриус Джонсон</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Вячеслав Василевский</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Йоанна Еджейчик</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Стипе Миочич</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Холли Холм</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Алистар Оверим</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Bellator</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Strikeforce</a></li>
+            <li class="footer-item"><a class="footer-link" href="">THE ULTIMATE FIGHTER</a></li>
+            <li class="footer-item"><a class="footer-link" href="">UFC</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Андерсон Сильва</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Витор Белфорт</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Дана Уайт</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Даниэль Кормье</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Джон Джонс</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Джуниор Дос Сантос</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Кейн Веласкес</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Крис Вайдмэн</a></li>
+            <li class="footer-item"><a class="footer-link" href="">ММА</a></li>
+            <li class="footer-item"><a class="footer-link" href="">Ронда Роузи</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="foot-widget">
+            <div class="foot-widget-pic"><img src="img/icon/logo-foot.png" alt="Top News"></div>
+            <div class="foot-widget-content">
+              <p>Средство массовой информации сетевое издание «FightTime» зарегистрировано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор).</p>
+            </div>
+            <div class="foot-widget-content">
+              <p>Свидетельство о регистрации средства массовой информации Эл № ФС77-72103 от 29.12.2017</p>
+            </div>
+            <div class="foot-widget-content">
+              <p>Авторское право © 2012 FightTime.Ru. Все права на материалы, размещенные на сайте, защищены в соответствии с российским и международным законодательством об авторском праве и смежных правах.</p>
+            </div>
+            <div class="foot-widget-content">
+              <p>При любом использовании материалов сайта активная ссылка на <a href="https://fighttime.ru/">FightTime.ru</a> обязательна.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end footer-wrapper-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="libs/fontawesome-pro/fontawesome-all.js"></script>
+    <script src="libs/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="libs/infinitescroll/infinite-scroll.pkgd.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
 </html>
