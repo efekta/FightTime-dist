@@ -16,55 +16,120 @@ news
 	@include screen(320px, 768px) {
 		padding: 15px;
 	}
-}
-.news-post-cat-date {
-	display: inline-block;
-	margin-right: 10px;
+	&-cat-date {
+			display: inline-block;
+			margin-right: 10px;
 		&-contain span {
 			color: $dark-gray;
 			font-size: .9em;
 			font-weight: 700;
 		}
-}
-
-.news-post_month, .news-post_day, .news-post_year {
-	text-transform: uppercase;
-}
-.news-post_author_box {
-	display: inline-block;
+	}
+	&_author_box {
+		display: inline-block;
 		span {
 			margin-right: 5px;
 		}
+	}
+	&-title {
+		margin: 20px 0;
+		h1 {
+			font-size: 2em;
+  		font-weight: 700;
+  		color: darken($dark-gray, 35%);
+		}
+	}
+}
+
+
+.news-post_month, .news-post_day, .news-post_year {
+	text-transform: uppercase;
 }
 
 span.news-post_author-name {
 	text-transform: uppercase;
 	color: darken($dark-gray, 30%);
 }
-.news-post-title {
-	margin: 20px 0;
-		h1 {
-			font-size: 2em;
-  		font-weight: 700;
-  		color: darken($dark-gray, 35%);
-		}
-}
 
 .news-post-container, .news-post-container_desc {
 	margin: 20px 0;
 }
-
-.news-post-container p {
-	font-size: 1.2em;
-	color: $dark-gray;
+.news-post-container {
+	p {
+		font-size: 1.2em;
+		color: $dark-gray;
+	}
+	&_desc {
+		padding: 0 40px;
+			blockquote p {
+				font-size: 1.2em;
+				font-weight: 700;
+		}
+	}
 }
-.news-post-container_desc {
-	padding: 0 40px;
-		blockquote p {
-			font-size: 1.2em;
-			font-weight: 700;
+
+.news-post-cat-contain {
+	position: relative;
+}
+.page-news_featured-lid-news {
+	position: absolute;
+	right: 0;
+		a {
+			color: $white;
 		}
 }
+
+
+.post-latest h2 {
+	position: relative;
+  color: darken($dark-gray, 30%);
+  font-family: 'Open Sans', sans-serif;
+  font-size: .85em;
+  font-weight: 800;
+  line-height: 100%;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  width: auto;
+  	&::after {
+  		border-style: solid;
+		  border-width: 20px 30px 0 30px;
+		  border-color: $white transparent transparent transparent;
+		  content: '';
+		  margin-left: -100px;
+		  position: absolute;
+		  bottom: -20px;
+		  z-index: 100;
+  	}
+  	&-header {
+  		padding: 30px 0 0 0;
+  	}
+}
+.post-tags {
+	margin-top: 20px;
+	display: flex;
+	&-header {
+		background: $blue;
+		font-size: .8em;
+		color: $white;
+		padding: 5px 10px;
+		text-transform: uppercase;
+	}
+	&-link {
+		background: $dark-gray;
+		font-size: .8em;
+		color: $white;
+		padding: 5px 10px;
+		text-transform: uppercase;
+		margin-left: 10px;
+			&:hover {
+				background: $red;
+				color: $white;
+			}
+	}
+}
+
+
+
 /*==============
 list-box
 ==============*/
@@ -132,12 +197,3 @@ list-box
   padding: 15px;
   background: $blue;
 }
-// .list-box-item:hover .prev-next-text {
-//   right: 0;
-// }
-// .list-box-item:hover .prev-prev-text {
-// 	left: 0;
-// }
-// .list-box-item:hover .list-box__link {
-// 	opacity: 0;
-// }
