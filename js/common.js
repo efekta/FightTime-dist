@@ -42,7 +42,7 @@ $('.menu-gamburger').on("click", function() {
 		$(".mob-menu").addClass("head-nav-mob_show");
 	}
 });
-	$(".menu-gamburger-close").on("click", function() {
+$(".menu-gamburger-close").on("click", function() {
 		$('body').removeClass('overlay');
 		$(".mob-menu").removeClass("head-nav-mob_show");
 });
