@@ -337,18 +337,19 @@ nav mob-menu
   left: 280px;
   top: 6px;
   z-index: 999;
-}
-.svg-inline--fa.icon-gamburger-close {
-  width: 42px;
-  height: 42px;
-  fill: $blue;
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  transition: all .8s ease-out;
-  &:hover {
-    transform: scale(.8);
+    .svg-inline--fa.icon-gamburger-close {
+    width: 42px;
+    height: 42px;
+    fill: $blue;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    transition: all .8s ease-out;
+      &:hover {
+        transform: scale(.8);
+      }
   }
+
 }
 
 .menu-list-mob {
