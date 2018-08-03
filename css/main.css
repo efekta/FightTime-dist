@@ -3972,6 +3972,7 @@ html {
   line-height: 1.42; }
 
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   color: #555;
