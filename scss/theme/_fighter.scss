@@ -20,6 +20,11 @@ page fighter
 		margin-right: 0;
 		text-align: center;
 	}
+	@include screen(320px, 768px) {
+		text-align: center;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
 		img {
 			width: auto;
 		}
@@ -34,12 +39,20 @@ page fighter
 			margin: 0 20px;
   		margin-bottom: 10px;
 		}
+		@include screen(320px, 768px) {
+			display: block;
+		}
 }
 .birthday__title,
 .age__title {
 	font-weight: 700;
 }
-
+.birthday-age {
+	@include screen(320px, 768px) {
+		text-align: center;
+		margin-bottom: 5px;
+	}
+}
 .location-address {
 	display: flex;
 		span {
@@ -84,6 +97,9 @@ stat
 	}
 	&__wins {
 		color: $color-title;
+		@include screen(320px, 768px) {
+			width: 100%;
+		}
 	}
 	&-title {
 		color: darken($dark-gray, 15%);
@@ -95,6 +111,9 @@ stat
 	}
 	&__loss {
 		color: $color-title-loss;
+		@include screen(320px, 768px) {
+			width: 100%;
+		}
 	}
 	&-sub-box {
 		margin-top: 10px;

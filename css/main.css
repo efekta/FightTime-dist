@@ -4672,6 +4672,11 @@ page fighter
     .fighter-main-img {
       margin-right: 0;
       text-align: center; } }
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .fighter-main-img {
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 20px; } }
   .fighter-main-img img {
     width: auto; }
 
@@ -4690,10 +4695,18 @@ page fighter
     .fighter-info {
       margin: 0 20px;
       margin-bottom: 10px; } }
+  @media only screen and (min-width: 320px) and (max-width: 768px) {
+    .fighter-info {
+      display: block; } }
 
 .birthday__title,
 .age__title {
   font-weight: 700; }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .birthday-age {
+    text-align: center;
+    margin-bottom: 5px; } }
 
 .location-address {
   display: -webkit-box;
@@ -4742,6 +4755,9 @@ stat
     display: flex; }
   .stat__wins {
     color: #378834; }
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+      .stat__wins {
+        width: 100%; } }
   .stat-title {
     color: #515151;
     font-size: 1em;
@@ -4750,6 +4766,9 @@ stat
     color: #919191; }
   .stat__loss {
     color: #ab372b; }
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+      .stat__loss {
+        width: 100%; } }
   .stat-sub-box {
     margin-top: 10px; }
     .stat-sub-box_black {
@@ -5505,24 +5524,6 @@ a.feedback-footer__day-link:hover {
     bottom: -20px;
     z-index: 100; }
 
-/*=================
-adaptive
-==================*/
-@media screen and (max-width: 768px) and (min-width: 320px) {
-  .fighter-main-img {
-    text-align: center;
-    margin-right: 0;
-    margin-bottom: 20px; }
-    .fighter-main-img img {
-      width: auto; }
-  .stat__wins, .stat__loss {
-    width: 100%; }
-  .fighter-info {
-    display: block; }
-  .birthday-age {
-    text-align: center;
-    margin-bottom: 5px; } }
-
 .sidebar-wrap {
   position: absolute;
   top: 0;
@@ -5546,6 +5547,16 @@ adaptive
       left: 0;
       right: 0;
       border-left: 0; } }
+  .sidebar-wrap-show {
+    right: 0; }
+    @media only screen and (min-width: 320px) and (max-width: 375px) {
+      .sidebar-wrap-show {
+        right: -20px; } }
+    .sidebar-wrap-show .fe-mobi-bt {
+      right: 270px; }
+      @media only screen and (min-width: 320px) and (max-width: 375px) {
+        .sidebar-wrap-show .fe-mobi-bt {
+          right: 285px; } }
 
 .sidebar-container {
   background: #eee;
@@ -5803,17 +5814,6 @@ adaptive
       border-radius: 0;
       padding: 11px 10px;
       z-index: 9999; } }
-
-.sidebar-wrap-show {
-  right: 0; }
-  @media only screen and (min-width: 320px) and (max-width: 375px) {
-    .sidebar-wrap-show {
-      right: -20px; } }
-  .sidebar-wrap-show .fe-mobi-bt {
-    right: 270px; }
-    @media only screen and (min-width: 320px) and (max-width: 375px) {
-      .sidebar-wrap-show .fe-mobi-bt {
-        right: 285px; } }
 
 /*=================
 news
