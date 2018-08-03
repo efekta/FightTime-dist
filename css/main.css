@@ -5690,6 +5690,9 @@ news
       font-size: 2em;
       font-weight: 700;
       color: #1e1e1e; }
+      @media only screen and (min-width: 320px) and (max-width: 768px) {
+        .news-post-title h1 {
+          font-size: 1.4em; } }
 
 .news-post_month, .news-post_day, .news-post_year {
   text-transform: uppercase; }

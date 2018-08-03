@@ -37,6 +37,9 @@ news
 			font-size: 2em;
   		font-weight: 700;
   		color: darken($dark-gray, 35%);
+  		@include screen(320px, 768px) {
+  			font-size: 1.4em;
+  		}
 		}
 	}
 }
