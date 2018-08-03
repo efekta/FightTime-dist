@@ -29,16 +29,16 @@
 	@include screen(320px, 480px) {
 		width: 100%;
 	}
-  	&_fixed {
-			position: fixed;
-  		transform: translateX(-100%);
-  		top: 76px;
-  		@include screen(320px, 1027px) {
-	  		position: relative;
-	    	transform: none;
-	    	top: 0;
-  		}
+	&_fixed {
+		position: fixed;
+		transform: translateX(-100%);
+		top: 76px;
+		@include screen(320px, 1027px) {
+  		position: relative;
+    	transform: none;
+    	top: 52px;
 		}
+	}
 }
 .sidebar {
 	position: relative;

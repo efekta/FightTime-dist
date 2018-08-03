@@ -151,7 +151,6 @@ main
 story section
 ==================*/
 .story {
-	// margin-top: 75px;
 	padding: 0;
 }
 .story_main_wrapp {
@@ -188,7 +187,6 @@ social-news-post
 ==================*/
 .social-news-post {
 	padding: 20px 2.93255131965%;
-	@include calc(100%, 340px);
 }
 .social-news-post_title {
 	position: relative;
@@ -297,9 +295,9 @@ a.user-name {
 	font-size: .8em;
 	color: $dark-gray;
 }
-.HoverCardPhotos {
-  margin-top: 12px;
-}
+// .HoverCardPhotos {
+//   margin-top: 12px;
+// }
 .hover-card-photos {
   margin-top: 10px;
   display: flex;
@@ -432,7 +430,6 @@ a.feedback-footer__day-link:hover {
 
 .post-latest-header {
 	padding: 30px 0 0 0;
-	@include calc(100%, 340px);
 }
 
 .post-latest h2 {
@@ -458,93 +455,17 @@ a.feedback-footer__day-link:hover {
 }
 
 
-
-
-
-
-
-
-
-
 /*=================
 adaptive
 ==================*/
 
-
-
-@media screen and (max-width: 960px) and (min-width: 320px) {
-	.fighter-main-img {
-		text-align: center;
-		margin-right: 0;
-			img {
-				width: auto;
-			}
-	}
-	//table
-	.table-head {
-			display: none;
-	}
-	.table-body {
-		position: relative;
-		border-top: 1px solid $bg-mob-nav-link;
-		border-right: 1px solid $bg-mob-nav-link;
-			&_link {
-				width: 100%;
-				min-height: auto;
-				text-align: center;
-				margin: 10px 0;
-				order: -1;
-			}
-			&:last-child {
-				border-bottom: 1px solid $bg-mob-nav-link;
-			}
-			&_box {
-				align-items: center;
-				border-bottom: 0;
-				border-right: none;
-			}
-	}
-	.mob-order-1 {
-		order: 1;
-		text-align: center;
-	}
-	.mob-order-2 {
-		order: 2;
-		text-align: left;
-	}
-	.mob-order-num {
-    position: absolute;
-    right: 0;
-    top: 65%;
-    width: 50%;
-	}
-	.mob-order-num2 {
-		right: 75px;
-	}
-	p.mob-table-title {
-		margin: 10px 0;
-	}
-	.mob-data-number {
-		display: inline-block;
-		font-weight: 700;
-	}
-
-	.mob-table-title {
-		font-weight: 700;
-			span {
-				display: block;
-				text-align: center;
-				font-weight: normal;
-			}
-	}
-}
 @media screen and (max-width: 768px) and (min-width: 320px) {
-	.news-post {
-		padding: 15px;
-	}
-	.page-fighter_info {
-		display: block;
-	}
+	// .news-post {
+	// 	padding: 15px;
+	// }
+	// .page-fighter_info {
+	// 	display: block;
+	// }
 	.fighter-main-img {
 		text-align: center;
 		margin-right: 0;

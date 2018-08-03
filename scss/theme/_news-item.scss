@@ -13,6 +13,9 @@ news
 }
 .news-post {
 	padding: 20px 2.93255131965%;
+	@include screen(320px, 768px) {
+		padding: 15px;
+	}
 }
 .news-post-cat-date {
 	display: inline-block;

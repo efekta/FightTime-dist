@@ -8,9 +8,18 @@ page fighter
 			font-weight: 700;
 		}
 }
-
+.fighter-subtitle {
+	margin: 20px 0;
+	font-size: 1.3em;
+	font-weight: 700;
+	color: darken($dark-gray, 30%);
+}
 .fighter-main-img {
 	margin-right: 22px;
+	@include screen(320px, 960px) {
+		margin-right: 0;
+		text-align: center;
+	}
 		img {
 			width: auto;
 		}
@@ -70,14 +79,34 @@ stat
 		margin: 0 20px;
   	margin-bottom: 10px;
 	}
+	&-box {
+		display: flex;
+	}
+	&__wins {
+		color: $color-title;
+	}
+	&-title {
+		color: darken($dark-gray, 15%);
+		font-size: 1em;
+		text-transform: none;
+	}
+	&-sub_title {
+		color: lighten($dark-gray, 10%);
+	}
+	&__loss {
+		color: $color-title-loss;
+	}
+	&-sub-box {
+		margin-top: 10px;
+		&_black {
+			color: darken($dark-gray, 25%);
+		}
+		&_block {
+			margin-left: -13px;
+		}
+	}
 }
-.stat-box {
-	display: flex;
-}
-.stat__wins {
-	// width: 50%;
-	color: $color-title;
-}
+
 .title {
 	color: $color-title;
 	text-transform: uppercase;
@@ -87,15 +116,11 @@ stat
 	min-width: 110px;
 	text-align: right;
 	flex-shrink: 0;
+	&__loss {
+		color: $color-title-loss;
+	}
 }
-.stat-sub_title {
-	color: lighten($dark-gray, 10%);
-}
-.stat-title {
-	color: darken($dark-gray, 15%);
-	font-size: 1em;
-	text-transform: none;
-}
+
 .count {
 	width: 35px;
 	margin: 0 10px 2px;
@@ -104,6 +129,13 @@ stat
 	font-weight: 900;
 	color: $white;
 	flex-shrink: 0;
+	&__loss {
+		background: $color-title-loss;
+		&_black {
+			background: darken($dark-gray, 25%);
+			color: $white;
+		}
+	}
 }
 
 .title, .count, .graph, .line, .percent {
@@ -125,47 +157,20 @@ stat
 	display: block;
 	background-color: $color-title;
 }
-.title__loss {
-	color: $color-title-loss;
-}
-.stat__loss {
-	// width: 50%;
-	color: $color-title-loss;
-}
-.stat-sub-box {
-	margin-top: 10px;
-}
-.stat-sub-box_black {
-	color: darken($dark-gray, 25%);
-}
-.count__loss_black {
-	background: darken($dark-gray, 25%);
-	color: $white;
-}
-.count__loss {
-	background: $color-title-loss;
-}
-.fighter-subtitle {
-	margin: 20px 0;
-	font-size: 1.3em;
-	font-weight: 700;
-	color: darken($dark-gray, 30%);
-}
 
-.stat-sub-box_block {
-	margin-left: -13px;
-}
 /*=================
 table-box
 ==================*/
 .table-box {
-	@include calc(100%, 340px);
 	padding: 20px 2.93255131965%;
 }
 
 .table-head {
 	border-left: 1px solid $blue;
 	border-right: 1px solid $blue;
+	@include screen(320px, 960px) {
+		display: none;
+	}
 		&_col {
 			color: $white;
 			font-size: 1.2em;
@@ -181,10 +186,15 @@ table-box
 		}
 }
 .table-body {
-	&:nth-child(2n) {
-		background: #f5f5f5;
-	}
 	border-left: 1px solid $bg-mob-nav-link;
+		@include screen(320px, 960px) {
+			position: relative;
+			border-top: 1px solid $bg-mob-nav-link;
+			border-right: 1px solid $bg-mob-nav-link;
+		}
+		&:nth-child(2n) {
+			background: #f5f5f5;
+		}
 		&_box {
 			display: flex;
    		flex-direction: column;
@@ -192,6 +202,11 @@ table-box
 			padding: 10px !important;
 			border-right: 1px solid $bg-mob-nav-link;
 			border-bottom: 1px solid $bg-mob-nav-link;
+			@include screen(320px, 960px) {
+				align-items: center;
+				border-bottom: 0;
+				border-right: none;
+			}
 			&:first-child {
 				flex-direction: row;
 				flex-wrap: wrap;
@@ -208,10 +223,22 @@ table-box
 			width: 49%;
 			font-size: 1.2em;
 			font-weight: 600;
+			@include screen(320px, 960px) {
+				width: 100%;
+				min-height: auto;
+				text-align: center;
+				margin: 10px 0;
+				order: -1;
+			}
 			 span {
 			 	font-weight: normal;
 			 }
 		}
+		&:last-child {
+			@include screen(320px, 960px) {
+				border-bottom: 1px solid $bg-mob-nav-link;
+		}
+	}
 }
 .result-wrap {
 	width: 45%;
@@ -231,7 +258,46 @@ table-box
 		}
 	}
 }
-
+.mob-table-title {
+	@include screen(320px, 960px) {
+		font-weight: 700;
+			span {
+				display: block;
+				text-align: center;
+				font-weight: normal;
+		}
+	}
+}
+p.mob-table-title {
+	@include screen(320px, 960px) {
+			margin: 10px 0;
+		}
+}
 .mob-data-number {
 	display: none;
+	@include screen(320px, 960px) {
+		display: inline-block;
+		font-weight: 700;
+	}
+}
+@include screen(320px, 960px) {
+	.mob-order {
+		&-1 {
+			order: 1;
+			text-align: center;
+		}
+		&-2 {
+			order: 2;
+			text-align: left;
+		}
+		&-num {
+			position: absolute;
+	    right: 0;
+	    top: 65%;
+	    width: 50%;
+		}
+		&-num2 {
+			right: 75px;
+		}
+	}
 }
