@@ -31,9 +31,7 @@ head-nav-mob
 // 	$(".head-nav-mob").addClass("head-nav-mob_show");
 // 	// $("body").addClass("overlay");
 // });
-// var menuStatus = 0;
-
-/////////
+var menuStatus = 0;
 $('.menu-gamburger').on("click", function() {
 	if($('body').hasClass('overlay')){
 		$('body').removeClass('overlay');
