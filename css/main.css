@@ -4899,6 +4899,12 @@ table-box
     width: 49%;
     font-size: 1.2em;
     font-weight: 600; }
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+      .table-body_link {
+        font-size: 1em; } }
+    @media only screen and (min-width: 320px) and (max-width: 478px) {
+      .table-body_link {
+        font-size: .9em; } }
     @media only screen and (min-width: 320px) and (max-width: 960px) {
       .table-body_link {
         width: 100%;
@@ -5445,7 +5451,7 @@ feedback (не знала что инстаграм сам генерирует 
     .tabs {
       width: 100%;
       position: absolute;
-      z-index: 10; } }
+      z-index: 999; } }
 
 .tab {
   width: 50%;

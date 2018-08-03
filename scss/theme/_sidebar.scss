@@ -77,7 +77,7 @@
   @include screen(320px, 480px) {
   	width: 100%;
   	position: absolute;
-		z-index: 10;
+		z-index: 999;
   }
 }
 .tab {

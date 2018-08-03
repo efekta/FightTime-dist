@@ -242,6 +242,12 @@ table-box
 			width: 49%;
 			font-size: 1.2em;
 			font-weight: 600;
+			@include screen(320px, 768px) {
+				font-size: 1em;
+			}
+			@include screen(320px, 478px) {
+				font-size: .9em;
+			}
 			@include screen(320px, 960px) {
 				width: 100%;
 				min-height: auto;
